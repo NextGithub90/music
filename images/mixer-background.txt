@@ -1,0 +1,13 @@
+PLACEHOLDER FOR MIXER BACKGROUND IMAGE
+
+Please replace this file with an actual image of a music mixer/audio console background similar to the one shown in the reference image.
+
+The image should be:
+1. High resolution (at least 1920x1080px)
+2. Dark-toned to allow white text to be readable
+3. Named "mixer-background.jpg"
+4. Placed in this same directory (images folder)
+
+This image will be used as the background for the hero section of the website.
+
+Note: Until you add this image, the hero section will not display properly.

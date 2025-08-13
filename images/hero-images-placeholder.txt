@@ -1,0 +1,18 @@
+PLACEHOLDER FOR HERO SLIDER IMAGES
+
+Untuk menampilkan slider hero section dengan benar, silakan tambahkan gambar-gambar berikut di folder images:
+
+1. mixer-background.jpg - Gambar background mixer audio (sudah ada)
+2. studio-background.jpg - Gambar studio rekaman
+3. licensing-background.jpg - Gambar yang menggambarkan lisensi musik
+4. hero-image-1.jpg - Gambar untuk slide pertama (tampilan samping)
+5. hero-image-2.jpg - Gambar untuk slide kedua (tampilan samping)
+6. hero-image-3.jpg - Gambar untuk slide ketiga (tampilan samping)
+
+Gambar-gambar tersebut sebaiknya:
+1. Beresolusi tinggi (minimal 1920x1080px untuk background, 800x600px untuk gambar samping)
+2. Memiliki tone warna yang sesuai dengan tema website (ungu/indigo)
+3. Untuk gambar background, sebaiknya memiliki tone gelap agar teks putih mudah dibaca
+4. Untuk gambar samping (hero-image-1/2/3), sebaiknya menggambarkan tema dari masing-masing slide
+
+Catatan: Sampai Anda menambahkan gambar-gambar ini, slider mungkin tidak akan ditampilkan dengan benar.

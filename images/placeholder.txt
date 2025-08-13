@@ -1,0 +1,7 @@
+This is a placeholder file for the images folder.
+
+Please add the following images to this folder:
+1. LOGO JQ COMPOSEY.png - Logo of the company
+2. Various images for the website content
+
+The website is currently configured to use these images, so make sure to add them to make the website display correctly.
