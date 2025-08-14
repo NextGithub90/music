@@ -141,7 +141,7 @@ a:hover {
 
 /* Navbar Styles */
 .navbar-brand img {
-  max-height: 50px;
+  height: 4.5rem;
 }
 
 .navbar .nav-item.dropdown {
