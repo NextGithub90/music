@@ -368,24 +368,24 @@ function initTestimonialSlider() {
  * Inisialisasi Hero Carousel dengan auto slider
  */
 function initHeroCarousel() {
-  const heroCarousel = document.querySelector('#heroCarousel');
-  
-  if (heroCarousel && typeof bootstrap !== 'undefined' && bootstrap.Carousel) {
+  const heroCarousel = document.querySelector("#heroCarousel");
+
+  if (heroCarousel && typeof bootstrap !== "undefined" && bootstrap.Carousel) {
     // Inisialisasi carousel dengan konfigurasi auto slider
     const carousel = new bootstrap.Carousel(heroCarousel, {
       interval: 6000, // Auto slide setiap 6 detik
       wrap: true, // Loop kembali ke slide pertama
       keyboard: true, // Kontrol dengan keyboard
-      pause: 'hover', // Pause saat hover
-      ride: 'carousel' // Auto start
+      pause: "hover", // Pause saat hover
+      ride: "carousel", // Auto start
     });
-    
+
     // Event listener untuk transisi yang smooth
-    heroCarousel.addEventListener('slide.bs.carousel', function (e) {
+    heroCarousel.addEventListener("slide.bs.carousel", function (e) {
       // Tambahkan efek fade atau animasi custom jika diperlukan
-      console.log('Hero carousel sliding to:', e.to);
+      console.log("Hero carousel sliding to:", e.to);
     });
-    
-    console.log('Hero carousel auto slider initialized');
+
+    console.log("Hero carousel auto slider initialized");
   }
 }
