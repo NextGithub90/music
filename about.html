@@ -4,31 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - JQ COMPOSEY - Music Publishing & Creative Agency</title>
+    <meta name="description"
+        content="Learn about JQ COMPOSEY - Professional music publishing company established in 2020, providing copyright management and licensing services.">
+    <title>About Us - JQ COMPOSEY</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation Library -->
+    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="font-sans">
+<body>
     <!-- Header & Navigation -->
-    <header class="bg-white shadow-sm sticky top-0 z-50" style="position: sticky; top: 0; z-index: 9000;">
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light py-3" style="padding: 0 0 0 0;">
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="JQ COMPOSEY Logo" class="h-12">
+                    <img src="images/logo.png" alt="JQ COMPOSEY Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -37,25 +35,25 @@
                             <a class="nav-link" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fw-bold" href="about.html">ABOUT US</a>
+                            <a class="nav-link active" href="about.html">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="music-creators.html">For Music Creators</a>
+                            <a class="nav-link" href="music-creators.html">Music Creators</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="rights-users.html">For Rights Users</a>
+                            <a class="nav-link" href="rights-users.html">Rights Users</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="catalogue.html">Catalogue</a>
+                            <a class="nav-link" href="catalog.html">Catalogue</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="partners.html">Our Partners</a>
+                            <a class="nav-link" href="partners.html">Partners</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="news.html">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -63,75 +61,63 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section text-white py-20" style=" overflow: hidden;">
-        <div class="container mx-auto px-4" style="overflow: hidden;">
-            <div class="text-center" data-aos="fade-up">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6" style="color: black !important;">
-                    About <span class="text-gradient">Us</span>
-                </h1>
-                <p class="text-xl mb-8 text-gray-200 max-w-3xl mx-auto"
-                    style="color: black !important; font-weight: 1  ;">
-                    Your trusted partner in music publishing, copyright management, and creative content development
-                </p>
-            </div>
+    <!-- Hero Section - NEW DESIGN -->
+    <section class="section-sm bg-gradient text-white text-center">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-3 fw-bold mb-4">About <span style="color: #22d3ee;">Us</span></h1>
+            <p class="fs-5 mb-0 mx-auto" style="max-width: 700px; opacity: 0.95;">
+                Your trusted partner in music publishing, copyright management, and creative content development
+            </p>
         </div>
     </section>
 
-    <!-- Who We Are Section -->
-    <section class="py-16 bg-white" style=" overflow: hidden;">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
-                <div class="w-24 h-1 bg-purple-600 mx-auto mb-8"></div>
-            </div>
-
-            <div class="row align-items-center mb-12">
+    <!-- Company Overview - NEW LAYOUT -->
+    <section class="section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <div class="bg-gradient-to-r from-purple-100 to-blue-100 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4 text-purple-800">PT. Melodex Sonavia International</h3>
-                        <p class="text-lg mb-4">
-                            <strong>PT. Melodex Sonavia International (MELODEX)</strong> was established in 2020 under
-                            the
-                            parent company
-                            <strong>PT. IRCOMM NORTON CAPITAL (IRCOMM Group)</strong>.
-                        </p>
-                        <p class="mb-4">
-                            We are a professional music publishing and creative content company committed to protecting
-                            intellectual property, managing music rights, and empowering creators.
-                        </p>
-                        <p class="mb-4">
-                            MELODEX provides end-to-end services including copyright administration, licensing
-                            solutions,
-                            royalty collection and distribution, and creative project support for songwriters,
-                            musicians,
-                            brands, and content producers.
-                        </p>
-                        <p>
-                            With a focus on transparency, innovation, and strategic collaboration, we aim to be trusted
-                            partners for creators and clients across the creative industry.
-                        </p>
-                    </div>
+                    <img src="images/company.png" alt="JQ COMPOSEY Office" class="rounded-xl shadow-xl w-100">
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <div class="text-center">
-                        <img src="images/company.png" alt="Recording Studio"
-                            class="rounded-lg shadow-xl w-full h-auto mb-6">
-                        <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h4 class="text-xl font-bold mb-4 text-purple-800">Our Memberships</h4>
-                            <div class="space-y-3">
-                                <a href="https://www.wami.id/" target="_blank"
-                                    class="flex items-center justify-center bg-purple-50 p-3 rounded hover:bg-purple-100 transition-colors duration-300 text-decoration-none">
-                                    <i class="fas fa-music text-purple-600 mr-3"></i>
-                                    <span class="font-semibold text-gray-800">Lembaga Manajemen Kolektif (LMK)
-                                        WAMI</span>
-                                </a>
-                                <a href="https://www.pampi.co.id/" target="_blank"
-                                    class="flex items-center justify-center bg-blue-50 p-3 rounded hover:bg-blue-100 transition-colors duration-300 text-decoration-none">
-                                    <i class="fas fa-handshake text-blue-600 mr-3"></i>
-                                    <span class="font-semibold text-gray-800">Asosiasi PAMPI</span>
-                                </a>
-                            </div>
+                    <div class="mb-4">
+                        <span class="badge bg-primary mb-3" style="font-size: 0.875rem; padding: 8px 16px;">Est.
+                            2020</span>
+                        <h2 class="section-title mb-4">PT. Melodex Sonavia International</h2>
+                    </div>
+                    <p class="mb-4">
+                        <strong>PT. Melodex Sonavia International (MELODEX)</strong> was established in 2020 under
+                        the parent company <strong>PT. IRCOMM NORTON CAPITAL (IRCOMM Group)</strong>.
+                    </p>
+                    <p class="mb-4">
+                        We are a professional music publishing and creative content company committed to protecting
+                        intellectual property, managing music rights, and empowering creators.
+                    </p>
+                    <p class="mb-5">
+                        MELODEX provides end-to-end services including copyright administration, licensing solutions,
+                        royalty collection and distribution, and creative project support for songwriters, musicians,
+                        brands, and content producers.
+                    </p>
+
+                    <!-- Memberships -->
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <h5 class="fw-bold mb-3">Our Memberships</h5>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="https://www.wami.id/" target="_blank" class="card text-decoration-none h-100">
+                                <div class="card-body p-3 d-flex align-items-center">
+                                    <i class="fas fa-music text-primary fs-4 me-3"></i>
+                                    <span class="fw-semibold">LMK WAMI</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="https://www.pampi.co.id/" target="_blank" class="card text-decoration-none h-100">
+                                <div class="card-body p-3 d-flex align-items-center">
+                                    <i class="fas fa-handshake text-primary fs-4 me-3"></i>
+                                    <span class="fw-semibold">Asosiasi PAMPI</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -139,28 +125,27 @@
         </div>
     </section>
 
-    <!-- Leadership Section -->
-    <section class="py-16 bg-gray-50" style="overflow: hidden;">
-        <div class="container mx-auto px-4" style="overflow: hidden;">
-            <div class="text-center mb-12" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-4">Our Leadership</h2>
-                <div class="w-24 h-1 bg-purple-600 mx-auto mb-8"></div>
+    <!-- Leadership - NEW DESIGN -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Leadership</h2>
+                <p class="section-subtitle">Meet the visionary behind JQ COMPOSEY</p>
+                <div class="section-divider"></div>
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div
-                        class="card h-100 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
-                        <div class="card-body p-8">
-                            <div
-                                class="bg-red-500 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                                <i class="fas fa-user-tie fa-2x"></i>
-                            </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+                    <div class="card text-center border-0 shadow-lg">
+                        <div class="card-body p-5">
                             <div class="mb-4">
-                                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wide">CEO</span>
+                                <div class="leadership-avatar mx-auto">
+                                    <span class="leadership-initials">SE</span>
+                                </div>
                             </div>
-                            <h4 class="text-xl font-bold text-gray-800 mb-2">Safira Ekadiandra</h4>
-
+                            <span class="badge bg-primary mb-3">CEO</span>
+                            <h4 class="fw-bold mb-2">Safira Ekadiandra</h4>
+                            <p class="text-muted mb-0">Leading JQ COMPOSEY with vision and innovation</p>
                         </div>
                     </div>
                 </div>
@@ -168,72 +153,86 @@
         </div>
     </section>
 
-    <!-- Who We Work With Section -->
-    <section class="py-16 bg-gray-50" style="overflow: hidden;">
-        <div class="container mx-auto px-4" style="overflow: hidden;">
-            <div class="text-center mb-12" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-4">Who We Work With</h2>
-                <p class="text-lg text-gray-600 mb-8">We support diverse clients across the music industry</p>
-                <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+    <!-- Who We Work With - NEW GRID LAYOUT -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Who We Work With</h2>
+                <p class="section-subtitle">Supporting diverse clients across the music industry</p>
+                <div class="section-divider"></div>
             </div>
 
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                    <div
-                        class="card h-100 border-0 shadow-sm hover:shadow-lg transition-shadow duration-300 text-center">
-                        <div class="card-body p-6">
-                            <div
-                                class="bg-purple-100 text-purple-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-user-music fa-2x"></i>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-md">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="feature-icon me-4" style="width: 70px; height: 70px; flex-shrink: 0;">
+                                    <i class="fas fa-user-music"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-3">Independent Songwriters & Musicians</h4>
+                                    <p class="text-muted mb-0">
+                                        Supporting solo artists and independent creators in protecting and monetizing
+                                        their work
+                                    </p>
+                                </div>
                             </div>
-                            <h4 class="font-bold mb-3">Independent Songwriters & Musicians</h4>
-                            <p class="text-gray-600">Supporting solo artists and independent creators in protecting and
-                                monetizing their work</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                    <div
-                        class="card h-100 border-0 shadow-sm hover:shadow-lg transition-shadow duration-300 text-center">
-                        <div class="card-body p-6">
-                            <div
-                                class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-compact-disc fa-2x"></i>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-md">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="feature-icon me-4" style="width: 70px; height: 70px; flex-shrink: 0;">
+                                    <i class="fas fa-compact-disc"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-3">Music Labels & Digital Platforms</h4>
+                                    <p class="text-muted mb-0">
+                                        Partnering with record labels and streaming platforms for comprehensive rights
+                                        management
+                                    </p>
+                                </div>
                             </div>
-                            <h4 class="font-bold mb-3">Music Labels & Digital Platforms</h4>
-                            <p class="text-gray-600">Partnering with record labels and streaming platforms for
-                                comprehensive rights management</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                    <div
-                        class="card h-100 border-0 shadow-sm hover:shadow-lg transition-shadow duration-300 text-center">
-                        <div class="card-body p-6">
-                            <div
-                                class="bg-green-100 text-green-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-video fa-2x"></i>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-md">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="feature-icon me-4" style="width: 70px; height: 70px; flex-shrink: 0;">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-3">Film/Advertising Producers & Content Creators</h4>
+                                    <p class="text-muted mb-0">
+                                        Providing music licensing solutions for visual media and content production
+                                    </p>
+                                </div>
                             </div>
-                            <h4 class="font-bold mb-3">Film/Advertising Producers & Content Creators</h4>
-                            <p class="text-gray-600">Providing music licensing solutions for visual media and content
-                                production</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-                    <div
-                        class="card h-100 border-0 shadow-sm hover:shadow-lg transition-shadow duration-300 text-center">
-                        <div class="card-body p-6">
-                            <div
-                                class="bg-orange-100 text-orange-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-building fa-2x"></i>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-md">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="feature-icon me-4" style="width: 70px; height: 70px; flex-shrink: 0;">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-3">Brands in Need of Legal Music Licensing</h4>
+                                    <p class="text-muted mb-0">
+                                        Helping brands secure proper music licensing for marketing and commercial use
+                                    </p>
+                                </div>
                             </div>
-                            <h4 class="font-bold mb-3">Brands in Need of Legal Music Licensing</h4>
-                            <p class="text-gray-600">Helping brands secure proper music licensing for marketing and
-                                commercial use</p>
                         </div>
                     </div>
                 </div>
@@ -241,110 +240,104 @@
         </div>
     </section>
 
-    <!-- Our Services Section -->
-    <section class="py-16 bg-white" style="overflow: hidden;">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-4">Our Services</h2>
-                <p class="text-lg text-gray-600 mb-8">What We Offer</p>
-                <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+    <!-- Our Services - HORIZONTAL CARDS -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive solutions for music rights management</p>
+                <div class="section-divider"></div>
             </div>
 
-            <div class="row g-4" style="overflow: hidden;">
-                <!-- Service 1 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100 border-0 shadow-sm hover:shadow-lg transition-shadow duration-300">
-                        <div class="card-body p-6">
-                            <div
-                                class="bg-purple-100 text-purple-600 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                                <i class="fas fa-copyright fa-2x"></i>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-md">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="bg-primary bg-opacity-10 text-primary rounded-lg p-3 me-3">
+                                    <i class="fas fa-copyright fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-2">Copyright Administration</h4>
+                                    <p class="text-muted mb-3">Registration and professional credit management for your
+                                        music rights</p>
+                                </div>
                             </div>
-                            <h4 class="text-xl font-bold mb-3">Copyright Administration</h4>
-                            <p class="text-gray-700 mb-4">Registration and professional credit management for your music
-                                rights.</p>
-                            <ul class="text-sm text-gray-600">
-                                <li>• Professional registration services</li>
-                                <li>• Rights documentation</li>
-                                <li>• Credit management</li>
+                            <ul class="list-unstyled mb-0 ps-4">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Professional registration
+                                    services</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Rights documentation</li>
+                                <li class="mb-0"><i class="fas fa-check text-primary me-2"></i>Credit management</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100 border-0 shadow-sm hover:shadow-lg transition-shadow duration-300">
-                        <div class="card-body p-6">
-                            <div
-                                class="bg-green-100 text-green-600 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                                <i class="fas fa-coins fa-2x"></i>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-md">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="bg-success bg-opacity-10 text-success rounded-lg p-3 me-3">
+                                    <i class="fas fa-coins fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-2">Royalty Collection & Distribution</h4>
+                                    <p class="text-muted mb-3">Transparent tracking of usage and timely payment of
+                                        royalties</p>
+                                </div>
                             </div>
-                            <h4 class="text-xl font-bold mb-3">Royalty Collection & Distribution</h4>
-                            <p class="text-gray-700 mb-4">Transparent tracking of usage and timely payment of royalties.
-                            </p>
-                            <ul class="text-sm text-gray-600">
-                                <li>• Usage tracking systems</li>
-                                <li>• Transparent reporting</li>
-                                <li>• Timely payments</li>
+                            <ul class="list-unstyled mb-0 ps-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Usage tracking systems
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Transparent reporting
+                                </li>
+                                <li class="mb-0"><i class="fas fa-check text-success me-2"></i>Timely payments</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card h-100 border-0 shadow-sm hover:shadow-lg transition-shadow duration-300">
-                        <div class="card-body p-6">
-                            <div
-                                class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                                <i class="fas fa-film fa-2x"></i>
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-md">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="bg-info bg-opacity-10 text-info rounded-lg p-3 me-3">
+                                    <i class="fas fa-film fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-2">Synchronization Licensing</h4>
+                                    <p class="text-muted mb-3">Licensing music for films, advertisements, and digital
+                                        media</p>
+                                </div>
                             </div>
-                            <h4 class="text-xl font-bold mb-3">Synchronization Licensing</h4>
-                            <p class="text-gray-700 mb-4">Licensing music for use in films, advertisements, digital
-                                videos, and other media.</p>
-                            <ul class="text-sm text-gray-600">
-                                <li>• Film & TV licensing</li>
-                                <li>• Advertisement sync</li>
-                                <li>• Digital content licensing</li>
+                            <ul class="list-unstyled mb-0 ps-4">
+                                <li class="mb-2"><i class="fas fa-check text-info me-2"></i>Film & TV licensing</li>
+                                <li class="mb-2"><i class="fas fa-check text-info me-2"></i>Advertisement sync</li>
+                                <li class="mb-0"><i class="fas fa-check text-info me-2"></i>Digital content licensing
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 4 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card h-100 border-0 shadow-sm hover:shadow-lg transition-shadow duration-300">
-                        <div class="card-body p-6">
-                            <div
-                                class="bg-orange-100 text-orange-600 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                                <i class="fas fa-file-alt fa-2x"></i>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-md">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="bg-warning bg-opacity-10 text-warning rounded-lg p-3 me-3">
+                                    <i class="fas fa-handshake fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-2">Creative Collaboration</h4>
+                                    <p class="text-muted mb-3">Work with artists, producers, and platforms to expand
+                                        your reach</p>
+                                </div>
                             </div>
-                            <h4 class="text-xl font-bold mb-3">Print License</h4>
-                            <p class="text-gray-700 mb-4">Licensing lyrics, sheet music, books, and merchandise use.</p>
-                            <ul class="text-sm text-gray-600">
-                                <li>• Sheet music licensing</li>
-                                <li>• Lyric permissions</li>
-                                <li>• Merchandise rights</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card h-100 border-0 shadow-sm hover:shadow-lg transition-shadow duration-300">
-                        <div class="card-body p-6">
-                            <div
-                                class="bg-pink-100 text-pink-600 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                                <i class="fas fa-handshake fa-2x"></i>
-                            </div>
-                            <h4 class="text-xl font-bold mb-3">Creative Collaboration & Promotion</h4>
-                            <p class="text-gray-700 mb-4">Work with artists, producers, labels, and digital platforms to
-                                expand your reach.</p>
-                            <ul class="text-sm text-gray-600">
-                                <li>• Artist collaborations</li>
-                                <li>• Label partnerships</li>
-                                <li>• Platform promotion</li>
+                            <ul class="list-unstyled mb-0 ps-4">
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Artist collaborations
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Label partnerships</li>
+                                <li class="mb-0"><i class="fas fa-check text-warning me-2"></i>Platform promotion</li>
                             </ul>
                         </div>
                     </div>
@@ -353,139 +346,134 @@
         </div>
     </section>
 
-    <!-- Our Works & Composers Section -->
-
-    <!-- Our Strengths Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-4">Our Strengths</h2>
-                <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+    <!-- Our Strengths - ICON GRID -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Strengths</h2>
+                <p class="section-subtitle">What sets us apart in the industry</p>
+                <div class="section-divider"></div>
             </div>
 
-            <div class="row g-4" style="overflow: hidden;">
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-center">
-                        <div
-                            class="bg-purple-100 text-purple-600 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-chart-line fa-2x"></i>
+            <div class="row g-4 text-center">
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="p-4">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-chart-line"></i>
                         </div>
-                        <h4 class="font-bold mb-3">Transparent Royalties</h4>
-                        <p class="text-gray-600">Accurate tracking and on-time payment reporting—aligned with trusted
-                            publishing standards.</p>
+                        <h5 class="fw-bold mb-3">Transparent Royalties</h5>
+                        <p class="text-muted">Accurate tracking and on-time payment reporting aligned with trusted
+                            publishing standards</p>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-center">
-                        <div
-                            class="bg-blue-100 text-blue-600 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-shield-alt fa-2x"></i>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="p-4">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-shield-alt"></i>
                         </div>
-                        <h4 class="font-bold mb-3">Comprehensive Copyright Management</h4>
-                        <p class="text-gray-600">Full service for copyright registration, monitoring, and protection.
-                        </p>
+                        <h5 class="fw-bold mb-3">Copyright Management</h5>
+                        <p class="text-muted">Full service for copyright registration, monitoring, and protection</p>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-center">
-                        <div
-                            class="bg-green-100 text-green-600 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-network-wired fa-2x"></i>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="p-4">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-network-wired"></i>
                         </div>
-                        <h4 class="font-bold mb-3">Extensive Collaboration Network</h4>
-                        <p class="text-gray-600">Connected with producers, labels, digital platforms, and content
-                            creators.</p>
+                        <h5 class="fw-bold mb-3">Collaboration Network</h5>
+                        <p class="text-muted">Connected with producers, labels, platforms, and content creators</p>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-                    <div class="text-center">
-                        <div
-                            class="bg-orange-100 text-orange-600 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-file-contract fa-2x"></i>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="p-4">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-file-contract"></i>
                         </div>
-                        <h4 class="font-bold mb-3">Complete Licensing Services</h4>
-                        <p class="text-gray-600">We provide synch, print, combined, and master licenses tailored to your
-                            needs.</p>
+                        <h5 class="fw-bold mb-3">Complete Licensing</h5>
+                        <p class="text-muted">Synch, print, combined, and master licenses tailored to your needs</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- CTA Section -->
+    <section class="section bg-gradient text-white text-center">
+        <div class="container" data-aos="zoom-in">
+            <h2 class="display-5 fw-bold mb-4">Ready to Work With Us?</h2>
+            <p class="fs-5 mb-5 mx-auto" style="max-width: 600px;">
+                Join hundreds of artists and creators who trust JQ COMPOSEY for their music rights management
+            </p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="contact.html" class="btn btn-light btn-lg">
+                    <i class="fas fa-envelope me-2"></i>Contact Us
+                </a>
 
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="row">
-                <div class="col-lg-4 mb-6 mb-lg-0">
-                    <img src="images/logo.png" alt="JQ COMPOSEY Logo" class="h-12 mb-4">
-                    <p class="mb-4">JQ COMPOSEY is a music publishing company focused on copyright management, music
-                        licensing, and creative project development for songwriters, musicians, and industry clients.
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="images/logo.png" alt="JQ COMPOSEY" class="footer-logo mb-3">
+                    <p class="mb-4">
+                        Professional music publishing company focused on copyright management,
+                        licensing, and creative development.
                     </p>
-                    <p>© 2023 JQ COMPOSEY. All rights reserved.</p>
+                    <p class="small">&copy; 2024 JQ COMPOSEY. All rights reserved.</p>
                 </div>
 
-                <div class="col-md-4 col-lg-2 mb-6 mb-md-0">
-                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                <div class="col-md-4 col-lg-2">
+                    <h4>Quick Links</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html"
-                                class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li class="mb-2"><a href="about.html"
-                                class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                        <li class="mb-2"><a href="music-creators.html"
-                                class="text-gray-400 hover:text-white transition-colors">For Music Creators</a></li>
-                        <li class="mb-2"><a href="rights-users.html"
-                                class="text-gray-400 hover:text-white transition-colors">For Rights Users</a></li>
-                        <li class="mb-2"><a href="catalogue.html"
-                                class="text-gray-400 hover:text-white transition-colors">Catalogue</a></li>
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="music-creators.html">Music Creators</a></li>
+                        <li class="mb-2"><a href="rights-users.html">Rights Users</a></li>
+                        <li class="mb-2"><a href="catalog.html">Catalogue</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-4 col-lg-2 mb-6 mb-md-0">
-                    <h4 class="text-xl font-bold mb-4">Resources</h4>
+                <div class="col-md-4 col-lg-2">
+                    <h4>Resources</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="privacy-terms.html"
-                                class="text-gray-400 hover:text-white transition-colors">Privacy
-                                Policy</a></li>
-                        <li class="mb-2"><a href="privacy-terms.html"
-                                class="text-gray-400 hover:text-white transition-colors">Terms of
-                                Service</a></li>
-                        <li class="mb-2"><a href="news.html"
-                                class="text-gray-400 hover:text-white transition-colors">News</a></li>
-                        <li class="mb-2"><a href="partners.html"
-                                class="text-gray-400 hover:text-white transition-colors">Our Partners</a></li>
+                        <li class="mb-2"><a href="partners.html">Partners</a></li>
+                        <li class="mb-2"><a href="news.html">News</a></li>
+                        <li class="mb-2"><a href="privacy-terms.html">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="privacy-terms.html">Terms of Service</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 col-lg-4">
-                    <h4 class="text-xl font-bold mb-4">Newsletter</h4>
-                    <p class="mb-4">Subscribe to our newsletter for the latest updates and news.</p>
+                    <h4>Newsletter</h4>
+                    <p class="mb-3">Subscribe for latest updates and news</p>
                     <form class="mb-4">
                         <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Your email address">
+                            <input type="email" class="form-control" placeholder="Your email">
                             <button class="btn btn-primary" type="submit">Subscribe</button>
                         </div>
                     </form>
-                    <div class="flex gap-3">
-                        <a href="https://www.facebook.com/share/16LSMXrrhz/" target="_blank"
-                            class="text-gray-400 hover:text-white transition-colors">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/16LSMXrrhz/" target="_blank" class="social-link">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="https://www.instagram.com/melodex.official?igsh=MXhjcXJvNG54MDd4Mg==" target="_blank"
-                            class="text-gray-400 hover:text-white transition-colors">
+                            class="social-link">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="https://youtube.com/@melodexpublishing?si=6AIVpKCLFcpB0VmK" target="_blank"
-                            class="text-gray-400 hover:text-white transition-colors">
+                            class="social-link">
                             <i class="fab fa-youtube"></i>
                         </a>
                         <a href="https://www.tiktok.com/@melodex.official?_r=1&_t=ZS-93R1Gsxxain" target="_blank"
-                            class="text-gray-400 hover:text-white transition-colors">
+                            class="social-link">
                             <i class="fab fa-tiktok"></i>
                         </a>
                     </div>
@@ -494,39 +482,42 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop"
-        class="fixed bottom-6 right-6 bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
+    <!-- Back to Top -->
+    <button id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Bootstrap JS Bundle with Popper -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom JS -->
     <script src="js/main.js"></script>
 
     <script>
-        // Initialize AOS
         AOS.init({
-            once: true
+            duration: 800,
+            once: true,
+            offset: 100
         });
 
-        // Back to Top Button
-        const backToTopButton = document.getElementById('backToTop');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('opacity-0', 'invisible');
-                backToTopButton.classList.add('opacity-100', 'visible');
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
             } else {
-                backToTopButton.classList.remove('opacity-100', 'visible');
-                backToTopButton.classList.add('opacity-0', 'invisible');
+                header.classList.remove('scrolled');
             }
         });
 
-        backToTopButton.addEventListener('click', () => {
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', function () {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'

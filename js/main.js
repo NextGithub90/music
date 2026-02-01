@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initTestimonialSlider(); // <-- Bug fix: Fungsi ini sekarang dipanggil
   initArtistCarousel();
   initHeroCarousel();
+  initShowMoreArtists(); // <-- New: Show More Artists functionality
 });
 
 /**
@@ -388,4 +389,70 @@ function initHeroCarousel() {
 
     console.log("Hero carousel auto slider initialized");
   }
+}
+
+/**
+ * Show More Artists functionality
+ */
+function initShowMoreArtists() {
+  const showMoreBtn = document.querySelector("#showMoreArtists");
+  if (!showMoreBtn) return;
+
+  const hiddenArtists = document.querySelectorAll(".artist-hidden");
+  const showMoreText = document.querySelector("#showMoreText");
+  const badge = showMoreBtn.querySelector(".badge");
+  const icon = showMoreBtn.querySelector("i");
+  
+  let isExpanded = false;
+
+  showMoreBtn.addEventListener("click", function () {
+    isExpanded = !isExpanded;
+
+    hiddenArtists.forEach((artist, index) => {
+      if (isExpanded) {
+        // Show with staggered animation
+        setTimeout(() => {
+          artist.classList.remove("artist-hidden");
+          artist.classList.add("artist-visible");
+        }, index * 50);
+      } else {
+        // Hide
+        artist.classList.remove("artist-visible");
+        artist.classList.add("artist-hidden");
+      }
+    });
+
+    // Update button text and icon
+    if (isExpanded) {
+      showMoreText.textContent = "Show Less";
+      icon.classList.remove("fa-chevron-down");
+      icon.classList.add("fa-chevron-up");
+      badge.style.display = "none";
+      
+      // Smooth scroll to show new artists
+      setTimeout(() => {
+        const firstHiddenArtist = hiddenArtists[0];
+        if (firstHiddenArtist) {
+          const offset = firstHiddenArtist.getBoundingClientRect().top + window.scrollY - 100;
+          window.scrollTo({
+            top: offset,
+            behavior: "smooth"
+          });
+        }
+      }, 300);
+    } else {
+      showMoreText.textContent = "Show More Artists";
+      icon.classList.remove("fa-chevron-up");
+      icon.classList.add("fa-chevron-down");
+      badge.style.display = "inline-block";
+      
+      // Scroll back to button
+      setTimeout(() => {
+        showMoreBtn.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      }, 100);
+    }
+  });
 }

@@ -4,31 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Music Creators - JQ COMPOSEY - Music Publishing & Creative Agency</title>
+    <meta name="description"
+        content="JQ COMPOSEY services for music creators - copyright administration, royalty collection, and creative collaboration.">
+    <title>For Music Creators - JQ COMPOSEY</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation Library -->
+    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="font-sans">
+<body>
     <!-- Header & Navigation -->
-    <header class="bg-white shadow-sm sticky top-0 z-50" style="position: sticky; top: 0; z-index: 9000;">
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light py-3" style="padding: 0 0 0 0;">
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="JQ COMPOSEY Logo" class="h-12">
+                    <img src="images/logo.png" alt="JQ COMPOSEY Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,22 +38,22 @@
                             <a class="nav-link" href="about.html">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fw-bold" href="music-creators.html">For Music Creators</a>
+                            <a class="nav-link active" href="music-creators.html">Music Creators</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="rights-users.html">For Rights Users</a>
+                            <a class="nav-link" href="rights-users.html">Rights Users</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="catalog.html">Catalogue</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="partners.html">Our Partners</a>
+                            <a class="nav-link" href="partners.html">Partners</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="news.html">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -64,291 +62,171 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section text-white py-20 img-fluid"
-        style="background-image: url(./images/recording-studio.jpg);">
-        <div class="container mx-auto px-4" style="overflow: hidden;">
-            <div class="text-center" data-aos="fade-up">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
-                    For <span class="text-gradient">Music Creators</span>
-                </h1>
-                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-yellow-300">
-                    Write It. Register It. Get What You Deserve.
-                </h2>
-                <p class="text-xl mb-8 text-gray-200 max-w-3xl mx-auto">
-                    Before the beat drops — know the rights that protect your music
-                </p>
-                <div class="flex justify-center items-center space-x-4 mt-8">
-                    <div class="animate-bounce">
-                        <i class="fas fa-music text-4xl text-yellow-300"></i>
+    <section class="section-sm bg-gradient text-white text-center">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-3 fw-bold mb-3">For Music <span style="color: #22d3ee;">Creators</span></h1>
+            <p class="fs-5 mb-0 mx-auto" style="max-width: 700px;">
+                Empowering songwriters and musicians to protect and monetize their creative work
+            </p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Why Partner With Us?</h2>
+                <p class="section-subtitle">We provide comprehensive support for your music career</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-center p-4">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Copyright Protection</h5>
+                        <p class="text-muted">Complete registration and protection of your intellectual property rights
+                        </p>
                     </div>
-                    <div class="animate-pulse">
-                        <i class="fas fa-arrow-right text-2xl"></i>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-center p-4">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Royalty Collection</h5>
+                        <p class="text-muted">Transparent tracking and timely payment of all your royalties</p>
                     </div>
-                    <div class="animate-bounce" style="animation-delay: 0.5s;">
-                        <i class="fas fa-dollar-sign text-4xl text-green-300"></i>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-center p-4">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Creative Network</h5>
+                        <p class="text-muted">Connect with producers, labels, and platforms worldwide</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="text-center p-4">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Career Growth</h5>
+                        <p class="text-muted">Strategic support to expand your reach and opportunities</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Royalties Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4" style=" overflow: hidden;">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-4">Your Music, Your Rights, Your Royalties</h2>
-                <p class="text-lg text-gray-600 mb-8">Discover the different ways your music can generate income</p>
-                <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+    <!-- Services Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Services for Creators</h2>
+                <p class="section-subtitle">Everything you need to succeed in the music industry</p>
+                <div class="section-divider"></div>
             </div>
 
-            <!-- Royalty Type 1 -->
-            <div class="mb-16">
-                <div class="row align-items-center">
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <div class="relative">
-                            <div
-                                class="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                                1
-                            </div>
-                            <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-purple-500">
-                                <div class="flex items-center mb-4">
-                                    <div class="bg-purple-100 p-3 rounded-full mr-4">
-                                        <i class="fas fa-stream text-purple-600 text-2xl"></i>
-                                    </div>
-                                    <h3 class="text-2xl font-bold text-purple-800">Royalties from Music Streaming</h3>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-md">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="bg-primary bg-opacity-10 text-primary rounded-lg p-3 me-3">
+                                    <i class="fas fa-copyright fs-3"></i>
                                 </div>
-                                <p class="text-gray-700 text-lg leading-relaxed">
-                                    Whenever your song is played on platforms like Spotify or Apple Music, you earn
-                                    mechanical royalties. These are payments for each time your music is streamed by
-                                    listeners.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mobile" data-aos="fade-left">
-                        <div class="text-center">
-                            <div
-                                class="bg-gradient-to-r from-purple-500 to-pink-500 p-8 rounded-full inline-block mb-4">
-                                <i class="fas fa-headphones text-white text-6xl"></i>
-                            </div>
-                            <div class="flex justify-center space-x-4 mt-6">
-                                <div class="bg-white p-4 rounded-lg shadow-md">
-                                    <i class="fab fa-spotify text-green-500 text-3xl mb-2"></i>
-                                    <p class="text-sm font-semibold">Spotify</p>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-md">
-                                    <i class="fab fa-apple text-gray-800 text-3xl mb-2"></i>
-                                    <p class="text-sm font-semibold">Apple Music</p>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-md">
-                                    <i class="fab fa-youtube text-red-500 text-3xl mb-2"></i>
-                                    <p class="text-sm font-semibold">YouTube</p>
+                                <div>
+                                    <h4 class="fw-bold mb-2">Copyright Administration</h4>
+                                    <p class="text-muted mb-3">Professional management of your music rights</p>
                                 </div>
                             </div>
+                            <ul class="list-unstyled mb-0 ps-4">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Song registration &
+                                    documentation</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Rights ownership
+                                    verification</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Credit management</li>
+                                <li class="mb-0"><i class="fas fa-check text-primary me-2"></i>Legal protection support
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Royalty Type 2 -->
-            <div class="mb-16">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2" data-aos="fade-left">
-                        <div class="relative">
-                            <div
-                                class="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                                2
-                            </div>
-                            <div class="bg-white p-8 rounded-lg shadow-lg border-r-4 border-blue-500">
-                                <div class="flex items-center mb-4">
-                                    <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                        <i class="fas fa-film text-blue-600 text-2xl"></i>
-                                    </div>
-                                    <h3 class="text-2xl font-bold text-blue-800">Synchronization Royalties</h3>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-md">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="bg-success bg-opacity-10 text-success rounded-lg p-3 me-3">
+                                    <i class="fas fa-coins fs-3"></i>
                                 </div>
-                                <p class="text-gray-700 text-lg leading-relaxed">
-                                    Whenever a song is paired with visual content—like films, TV shows, video games, or
-                                    online videos—it earns what's called a synchronization royalty. This type of royalty
-                                    rewards songwriters when their music enhances a visual experience.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1 mobile" data-aos="fade-right">
-                        <div class="text-center">
-                            <div class="bg-gradient-to-r from-blue-500 to-cyan-500 p-8 rounded-full inline-block mb-4">
-                                <i class="fas fa-video text-white text-6xl"></i>
-                            </div>
-                            <div class="grid grid-cols-2 gap-4 mt-6">
-                                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                                    <i class="fas fa-tv text-blue-500 text-2xl mb-2"></i>
-                                    <p class="text-sm font-semibold">TV Shows</p>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                                    <i class="fas fa-gamepad text-purple-500 text-2xl mb-2"></i>
-                                    <p class="text-sm font-semibold">Video Games</p>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                                    <i class="fas fa-film text-red-500 text-2xl mb-2"></i>
-                                    <p class="text-sm font-semibold">Movies</p>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                                    <i class="fas fa-ad text-orange-500 text-2xl mb-2"></i>
-                                    <p class="text-sm font-semibold">Ads</p>
+                                <div>
+                                    <h4 class="fw-bold mb-2">Royalty Collection & Distribution</h4>
+                                    <p class="text-muted mb-3">Maximize your earnings from all sources</p>
                                 </div>
                             </div>
+                            <ul class="list-unstyled mb-0 ps-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Performance royalties
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Mechanical royalties</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Digital streaming revenue
+                                </li>
+                                <li class="mb-0"><i class="fas fa-check text-success me-2"></i>Transparent reporting
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Royalty Type 3 -->
-            <div class="mb-16">
-                <div class="row align-items-center">
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <div class="relative">
-                            <div
-                                class="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                                3
-                            </div>
-                            <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-green-500">
-                                <div class="flex items-center mb-4">
-                                    <div class="bg-green-100 p-3 rounded-full mr-4">
-                                        <i class="fas fa-quote-right text-green-600 text-2xl"></i>
-                                    </div>
-                                    <h3 class="text-2xl font-bold text-green-800">Royalties from Online Lyrics</h3>
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-md">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="bg-info bg-opacity-10 text-info rounded-lg p-3 me-3">
+                                    <i class="fas fa-handshake fs-3"></i>
                                 </div>
-                                <p class="text-gray-700 text-lg leading-relaxed">
-                                    If your song lyrics appear on websites, search engines, or streaming platforms,
-                                    you're entitled to royalties. These are earned every time someone views or accesses
-                                    your lyrics online.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mobile" data-aos="fade-left">
-                        <div class="text-center">
-                            <div class="bg-gradient-to-r from-green-500 to-teal-500 p-8 rounded-full inline-block mb-4">
-                                <i class="fas fa-file-alt text-white text-6xl"></i>
-                            </div>
-                            <div class="bg-white p-6 rounded-lg shadow-lg">
-                                <div class="flex items-center justify-center space-x-4 mb-4">
-                                    <i class="fab fa-google text-4xl text-blue-500"></i>
-                                    <i class="fas fa-search text-2xl text-gray-400"></i>
-                                    <i class="fas fa-music text-2xl text-purple-500"></i>
+                                <div>
+                                    <h4 class="fw-bold mb-2">Creative Collaboration</h4>
+                                    <p class="text-muted mb-3">Connect with industry professionals</p>
                                 </div>
-                                <p class="text-gray-600 font-semibold">Search engines, lyrics websites, and streaming
-                                    platforms</p>
                             </div>
+                            <ul class="list-unstyled mb-0 ps-4">
+                                <li class="mb-2"><i class="fas fa-check text-info me-2"></i>Producer matchmaking</li>
+                                <li class="mb-2"><i class="fas fa-check text-info me-2"></i>Label introductions</li>
+                                <li class="mb-2"><i class="fas fa-check text-info me-2"></i>Platform partnerships</li>
+                                <li class="mb-0"><i class="fas fa-check text-info me-2"></i>Networking opportunities
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Royalty Type 4 -->
-            <div class="mb-16">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2" data-aos="fade-left">
-                        <div class="relative">
-                            <div
-                                class="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                                4
-                            </div>
-                            <div class="bg-white p-8 rounded-lg shadow-lg border-r-4 border-orange-500">
-                                <div class="flex items-center mb-4">
-                                    <div class="bg-orange-100 p-3 rounded-full mr-4">
-                                        <i class="fas fa-copy text-orange-600 text-2xl"></i>
-                                    </div>
-                                    <h3 class="text-2xl font-bold text-orange-800">Royalties from Music Reproductions
-                                    </h3>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-md">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="bg-warning bg-opacity-10 text-warning rounded-lg p-3 me-3">
+                                    <i class="fas fa-rocket fs-3"></i>
                                 </div>
-                                <p class="text-gray-700 text-lg leading-relaxed">
-                                    Each time a song is copied and shared—whether through physical formats like CDs and
-                                    vinyl or digital formats like downloads and streaming—it generates mechanical
-                                    royalties that rightfully belong to the songwriter.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1 mobile" data-aos="fade-right">
-                        <div class="text-center">
-                            <div class="bg-gradient-to-r from-orange-500 to-red-500 p-8 rounded-full inline-block mb-4">
-                                <i class="fas fa-compact-disc text-white text-6xl"></i>
-                            </div>
-                            <div class="flex justify-center space-x-6 mt-6">
-                                <div class="text-center">
-                                    <div class="bg-white p-4 rounded-full shadow-lg mb-2">
-                                        <i class="fas fa-compact-disc text-orange-500 text-3xl"></i>
-                                    </div>
-                                    <p class="text-sm font-semibold">Physical</p>
-                                </div>
-                                <div class="text-center">
-                                    <div class="bg-white p-4 rounded-full shadow-lg mb-2">
-                                        <i class="fas fa-download text-blue-500 text-3xl"></i>
-                                    </div>
-                                    <p class="text-sm font-semibold">Digital</p>
-                                </div>
-                                <div class="text-center">
-                                    <div class="bg-white p-4 rounded-full shadow-lg mb-2">
-                                        <i class="fas fa-stream text-purple-500 text-3xl"></i>
-                                    </div>
-                                    <p class="text-sm font-semibold">Streaming</p>
+                                <div>
+                                    <h4 class="fw-bold mb-2">Career Development</h4>
+                                    <p class="text-muted mb-3">Strategic support for your growth</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Royalty Type 5 -->
-            <div class="mb-16">
-                <div class="row align-items-center">
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <div class="relative">
-                            <div
-                                class="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                                5
-                            </div>
-                            <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-pink-500">
-                                <div class="flex items-center mb-4">
-                                    <div class="bg-pink-100 p-3 rounded-full mr-4">
-                                        <i class="fas fa-broadcast-tower text-pink-600 text-2xl"></i>
-                                    </div>
-                                    <h3 class="text-2xl font-bold text-pink-800">Royalties from Video & Live Streaming
-                                    </h3>
-                                </div>
-                                <p class="text-gray-700 text-lg leading-relaxed">
-                                    When your song is used in a live stream, online concert, or video content (like on
-                                    YouTube or other platforms), you earn synchronization royalties. These apply whether
-                                    the content is streamed live or available as Video on Demand (VOD).
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mobile" data-aos="fade-left">
-                        <div class="text-center">
-                            <div
-                                class="bg-gradient-to-r from-pink-500 to-purple-500 p-8 rounded-full inline-block mb-4">
-                                <i class="fas fa-video text-white text-6xl"></i>
-                            </div>
-                            <div class="grid grid-cols-2 gap-4 mt-6">
-                                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                                    <i class="fas fa-broadcast-tower text-red-500 text-2xl mb-2"></i>
-                                    <p class="text-sm font-semibold">Live Streaming</p>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                                    <i class="fas fa-music text-purple-500 text-2xl mb-2"></i>
-                                    <p class="text-sm font-semibold">Online Concerts</p>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                                    <i class="fab fa-youtube text-red-600 text-2xl mb-2"></i>
-                                    <p class="text-sm font-semibold">YouTube</p>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                                    <i class="fas fa-play-circle text-blue-500 text-2xl mb-2"></i>
-                                    <p class="text-sm font-semibold">VOD</p>
-                                </div>
-                            </div>
+                            <ul class="list-unstyled mb-0 ps-4">
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Marketing support</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Brand development</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Industry guidance</li>
+                                <li class="mb-0"><i class="fas fa-check text-warning me-2"></i>Promotional opportunities
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -356,99 +234,123 @@
         </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section class="py-16 bg-gradient-to-r from-purple-600 to-blue-600 text-white" style="overflow: hidden;">
-        <div class="container mx-auto px-4" style="overflow: hidden;">
-            <div class="text-center" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-6">Ready to Protect Your Music Rights?</h2>
-                <p class="text-xl mb-8 max-w-3xl mx-auto">
-                    Join thousands of music creators who trust JQ COMPOSEY to manage their rights and maximize their
-                    royalties.
-                </p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <a href="#contact"
-                        class="btn btn-light btn-lg px-8 py-3 font-semibold hover:shadow-lg transition-all duration-300">
-                        <i class="fas fa-user-plus mr-2"></i>Register Your Music
-                    </a>
-                    <a href="catalogue.html"
-                        class="btn btn-outline-light btn-lg px-8 py-3 font-semibold hover:bg-white hover:text-purple-600 transition-all duration-300">
-                        <i class="fas fa-music mr-2"></i>Explore Our Catalog
-                    </a>
+    <!-- How It Works Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Simple steps to get started</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle mx-auto mb-4 d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; font-size: 2rem; font-weight: bold;">
+                            1
+                        </div>
+                        <h5 class="fw-bold mb-3">Register Your Works</h5>
+                        <p class="text-muted">Submit your songs and complete the registration process</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle mx-auto mb-4 d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; font-size: 2rem; font-weight: bold;">
+                            2
+                        </div>
+                        <h5 class="fw-bold mb-3">We Protect Your Rights</h5>
+                        <p class="text-muted">We handle all copyright administration and monitoring</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle mx-auto mb-4 d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; font-size: 2rem; font-weight: bold;">
+                            3
+                        </div>
+                        <h5 class="fw-bold mb-3">Collect Royalties</h5>
+                        <p class="text-muted">We track usage and collect royalties from all sources</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle mx-auto mb-4 d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; font-size: 2rem; font-weight: bold;">
+                            4
+                        </div>
+                        <h5 class="fw-bold mb-3">Get Paid</h5>
+                        <p class="text-muted">Receive transparent reports and timely payments</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="row">
-                <div class="col-lg-4 mb-6 mb-lg-0">
-                    <img src="images/logo.png" alt="JQ COMPOSEY Logo" class="h-12 mb-4">
-                    <p class="mb-4">JQ COMPOSEY is a music publishing company focused on copyright management, music
-                        licensing, and creative project development for songwriters, musicians, and industry clients.
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="images/logo.png" alt="JQ COMPOSEY" class="footer-logo mb-3">
+                    <p class="mb-4">
+                        Professional music publishing company focused on copyright management,
+                        licensing, and creative development.
                     </p>
-                    <p>© 2023 JQ COMPOSEY. All rights reserved.</p>
+                    <p class="small">&copy; 2024 JQ COMPOSEY. All rights reserved.</p>
                 </div>
 
-                <div class="col-md-4 col-lg-2 mb-6 mb-md-0">
-                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                <div class="col-md-4 col-lg-2">
+                    <h4>Quick Links</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html"
-                                class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li class="mb-2"><a href="about.html"
-                                class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                        <li class="mb-2"><a href="music-creators.html"
-                                class="text-gray-400 hover:text-white transition-colors">For Music Creators</a></li>
-                        <li class="mb-2"><a href="rights-users.html"
-                                class="text-gray-400 hover:text-white transition-colors">For Rights Users</a></li>
-                        <li class="mb-2"><a href="catalogue.html"
-                                class="text-gray-400 hover:text-white transition-colors">Catalogue</a></li>
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="music-creators.html">Music Creators</a></li>
+                        <li class="mb-2"><a href="rights-users.html">Rights Users</a></li>
+                        <li class="mb-2"><a href="catalog.html">Catalogue</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-4 col-lg-2 mb-6 mb-md-0">
-                    <h4 class="text-xl font-bold mb-4">Resources</h4>
+                <div class="col-md-4 col-lg-2">
+                    <h4>Resources</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="privacy-terms.html"
-                                class="text-gray-400 hover:text-white transition-colors">Privacy
-                                Policy</a></li>
-                        <li class="mb-2"><a href="privacy-terms.html"
-                                class="text-gray-400 hover:text-white transition-colors">Terms of
-                                Service</a></li>
-                        <li class="mb-2"><a href="news.html"
-                                class="text-gray-400 hover:text-white transition-colors">News</a></li>
-                        <li class="mb-2"><a href="partners.html"
-                                class="text-gray-400 hover:text-white transition-colors">Our Partners</a></li>
+                        <li class="mb-2"><a href="partners.html">Partners</a></li>
+                        <li class="mb-2"><a href="news.html">News</a></li>
+                        <li class="mb-2"><a href="privacy-terms.html">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="privacy-terms.html">Terms of Service</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 col-lg-4">
-                    <h4 class="text-xl font-bold mb-4">Newsletter</h4>
-                    <p class="mb-4">Subscribe to our newsletter for the latest updates and news.</p>
+                    <h4>Newsletter</h4>
+                    <p class="mb-3">Subscribe for latest updates and news</p>
                     <form class="mb-4">
                         <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Your email address">
+                            <input type="email" class="form-control" placeholder="Your email">
                             <button class="btn btn-primary" type="submit">Subscribe</button>
                         </div>
                     </form>
-                    <div class="flex gap-3">
-                        <a href="https://www.facebook.com/share/16LSMXrrhz/" target="_blank"
-                            class="text-gray-400 hover:text-white transition-colors">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/16LSMXrrhz/" target="_blank" class="social-link">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://www.instagram.com/jq.composey?igsh=MjZ4bG9nZmlpMmk1" target="_blank"
-                            class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.instagram.com/melodex.official?igsh=MXhjcXJvNG54MDd4Mg==" target="_blank"
+                            class="social-link">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.youtube.com/@jq.composey" target="_blank"
-                            class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://youtube.com/@melodexpublishing?si=6AIVpKCLFcpB0VmK" target="_blank"
+                            class="social-link">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://tiktok.com/@jq.composey" target="_blank"
-                            class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.tiktok.com/@melodex.official?_r=1&_t=ZS-93R1Gsxxain" target="_blank"
+                            class="social-link">
                             <i class="fab fa-tiktok"></i>
                         </a>
                     </div>
@@ -457,39 +359,42 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop"
-        class="fixed bottom-6 right-6 bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
+    <!-- Back to Top -->
+    <button id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Bootstrap JS Bundle with Popper -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom JS -->
     <script src="js/main.js"></script>
 
     <script>
-        // Initialize AOS
         AOS.init({
-            once: true
+            duration: 800,
+            once: true,
+            offset: 100
         });
 
-        // Back to Top Button
-        const backToTopButton = document.getElementById('backToTop');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('opacity-0', 'invisible');
-                backToTopButton.classList.add('opacity-100', 'visible');
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
             } else {
-                backToTopButton.classList.remove('opacity-100', 'visible');
-                backToTopButton.classList.add('opacity-0', 'invisible');
+                header.classList.remove('scrolled');
             }
         });
 
-        backToTopButton.addEventListener('click', () => {
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', function () {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'

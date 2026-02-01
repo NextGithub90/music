@@ -4,31 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy & Terms of Service - JQ COMPOSEY</title>
+    <meta name="description" content="Privacy Policy and Terms of Service for JQ COMPOSEY music publishing services.">
+    <title>Privacy Policy & Terms - JQ COMPOSEY</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation Library -->
+    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .policy-section {
+            margin-bottom: 48px;
+        }
+
+        .policy-section h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--primary-light);
+        }
+
+        .policy-section h4 {
+            color: var(--neutral-800);
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+
+        .policy-section p,
+        .policy-section li {
+            color: var(--neutral-600);
+            line-height: 1.8;
+        }
+
+        .policy-section ul {
+            margin-bottom: 20px;
+        }
+
+        .sidebar-nav {
+            position: sticky;
+            top: 100px;
+        }
+
+        .sidebar-nav a {
+            display: block;
+            padding: 12px 16px;
+            color: var(--neutral-700);
+            text-decoration: none;
+            border-left: 3px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .sidebar-nav a:hover,
+        .sidebar-nav a.active {
+            color: var(--primary);
+            border-left-color: var(--primary);
+            background-color: var(--neutral-50);
+        }
+    </style>
 </head>
 
-<body class="font-sans">
+<body>
     <!-- Header & Navigation -->
-    <header class="bg-white shadow-sm sticky top-0 z-50" style="position: sticky; top: 0; z-index: 9000;">
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light py-3" style="padding: 0 0 0 0;">
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="JQ COMPOSEY Logo" class="h-12">
+                    <img src="images/logo.png" alt="JQ COMPOSEY Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,22 +87,22 @@
                             <a class="nav-link" href="about.html">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="music-creators.html">For Music Creators</a>
+                            <a class="nav-link" href="music-creators.html">Music Creators</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="rights-users.html">For Rights Users</a>
+                            <a class="nav-link" href="rights-users.html">Rights Users</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="catalog.html">Catalogue</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="partners.html">Our Partners</a>
+                            <a class="nav-link" href="partners.html">Partners</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="news.html">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -64,351 +111,253 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-20">
-        <div class="container mx-auto px-4 text-center" style="overflow: hidden;">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">
-                <i class="fas fa-shield-alt mr-3"></i>Privacy Policy & Terms of Service
-            </h1>
-            <p class="text-xl mb-6" data-aos="fade-up" data-aos-delay="200">
-                Your privacy and trust are our top priorities
-            </p>
-            <div class="w-24 h-1 bg-white mx-auto" data-aos="fade-up" data-aos-delay="400"></div>
+    <section class="section-sm bg-gradient text-white text-center">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-3 fw-bold mb-3">Privacy & <span style="color: #22d3ee;">Terms</span></h1>
+            <p class="fs-5 mb-0">Your privacy and trust are important to us</p>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4" style="overflow: hidden;">
-            <!-- Privacy Policy Section -->
-            <div class="bg-white rounded-lg shadow-lg p-8 mb-12" data-aos="fade-up">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">
-                        <i class="fas fa-user-shield text-purple-600 mr-3"></i>Privacy Policy
-                    </h2>
-                    <p class="text-gray-600">Last Updated: 14 August 2025</p>
+    <!-- Content Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Sidebar Navigation -->
+                <div class="col-lg-3" data-aos="fade-right">
+                    <div class="sidebar-nav">
+                        <h5 class="fw-bold mb-3">Quick Navigation</h5>
+                        <a href="#privacy-policy" class="active">Privacy Policy</a>
+                        <a href="#information-collection">Information Collection</a>
+                        <a href="#data-usage">How We Use Data</a>
+                        <a href="#data-protection">Data Protection</a>
+                        <a href="#cookies">Cookies</a>
+                        <a href="#terms-of-service">Terms of Service</a>
+                        <a href="#user-obligations">User Obligations</a>
+                        <a href="#intellectual-property">Intellectual Property</a>
+                        <a href="#limitation-liability">Limitation of Liability</a>
+                        <a href="#contact-info">Contact Information</a>
+                    </div>
                 </div>
 
-                <div class="space-y-8">
-                    <!-- Introduction -->
-                    <div class="border-l-4 border-purple-600 pl-6" data-aos="fade-right">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-info-circle text-purple-600 mr-2"></i>1. Introduction
-                        </h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            PT. JQCOMM NORTON COMPOSEY ("JQ Composey," "we," "our," or "us") respects your privacy and
-                            is committed to protecting your personal information. This Privacy Policy explains how we
-                            collect, use, store, and safeguard your information when you visit our website, use our
-                            services, or interact with us online.
+                <!-- Main Content -->
+                <div class="col-lg-9" data-aos="fade-left">
+                    <!-- Privacy Policy -->
+                    <div id="privacy-policy" class="policy-section">
+                        <h2 class="h1 fw-bold mb-4">Privacy Policy</h2>
+                        <p class="text-muted mb-4"><strong>Last Updated:</strong> January 1, 2024</p>
+
+                        <p>
+                            At JQ COMPOSEY, we are committed to protecting your privacy and ensuring the security
+                            of your personal information. This Privacy Policy explains how we collect, use, disclose,
+                            and safeguard your information when you visit our website or use our services.
                         </p>
                     </div>
 
-                    <!-- Information We Collect -->
-                    <div class="border-l-4 border-blue-600 pl-6" data-aos="fade-right" data-aos-delay="100">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-database text-blue-600 mr-2"></i>2. Information We Collect
-                        </h3>
-                        <p class="text-gray-700 mb-4">We may collect the following types of information:</p>
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <div class="bg-purple-50 p-4 rounded-lg">
-                                <h4 class="font-semibold text-purple-800 mb-2">
-                                    <i class="fas fa-user mr-2"></i>Personal Information
-                                </h4>
-                                <p class="text-sm text-gray-700">Name, email address, phone number, company name, and
-                                    any other details you provide when registering, making inquiries, or signing
-                                    licensing agreements.</p>
-                            </div>
-                            <div class="bg-blue-50 p-4 rounded-lg">
-                                <h4 class="font-semibold text-blue-800 mb-2">
-                                    <i class="fas fa-laptop mr-2"></i>Technical Data
-                                </h4>
-                                <p class="text-sm text-gray-700">IP address, browser type, operating system, referring
-                                    URLs, and browsing behavior on our website.</p>
-                            </div>
-                            <div class="bg-green-50 p-4 rounded-lg">
-                                <h4 class="font-semibold text-green-800 mb-2">
-                                    <i class="fas fa-credit-card mr-2"></i>Transaction Data
-                                </h4>
-                                <p class="text-sm text-gray-700">Details of licensing requests, payments, and royalty
-                                    distributions.</p>
-                            </div>
-                        </div>
+                    <!-- Information Collection -->
+                    <div id="information-collection" class="policy-section">
+                        <h3>Information We Collect</h3>
+
+                        <h4>Personal Information</h4>
+                        <p>We may collect personal information that you voluntarily provide to us when you:</p>
+                        <ul>
+                            <li>Register for an account</li>
+                            <li>Submit music for licensing or publishing</li>
+                            <li>Contact us through our website</li>
+                            <li>Subscribe to our newsletter</li>
+                            <li>Participate in surveys or promotions</li>
+                        </ul>
+
+                        <p>This information may include:</p>
+                        <ul>
+                            <li>Name and contact information (email, phone number, address)</li>
+                            <li>Professional information (artist name, company name)</li>
+                            <li>Payment and billing information</li>
+                            <li>Music works and related metadata</li>
+                        </ul>
+
+                        <h4>Automatically Collected Information</h4>
+                        <p>When you visit our website, we automatically collect certain information, including:</p>
+                        <ul>
+                            <li>IP address and browser type</li>
+                            <li>Device information</li>
+                            <li>Pages visited and time spent on pages</li>
+                            <li>Referring website addresses</li>
+                        </ul>
                     </div>
 
-                    <!-- How We Use Your Information -->
-                    <div class="border-l-4 border-green-600 pl-6" data-aos="fade-right" data-aos-delay="200">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-cogs text-green-600 mr-2"></i>3. How We Use Your Information
-                        </h3>
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                <p class="text-gray-700">Processing licensing requests and royalty payments</p>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                <p class="text-gray-700">Responding to inquiries and providing customer support</p>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                <p class="text-gray-700">Improving our website, services, and user experience</p>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                <p class="text-gray-700">Complying with legal and regulatory requirements</p>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Data Usage -->
+                    <div id="data-usage" class="policy-section">
+                        <h3>How We Use Your Information</h3>
 
-                    <!-- Data Sharing and Disclosure -->
-                    <div class="border-l-4 border-orange-600 pl-6" data-aos="fade-right" data-aos-delay="300">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-share-alt text-orange-600 mr-2"></i>4. Data Sharing and Disclosure
-                        </h3>
-                        <div class="bg-orange-50 p-4 rounded-lg mb-4">
-                            <p class="text-orange-800 font-semibold mb-2">
-                                <i class="fas fa-exclamation-triangle mr-2"></i>We do not sell your personal
-                                information.
-                            </p>
-                        </div>
-                        <p class="text-gray-700 mb-3">We may share your data only with:</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-start space-x-3">
-                                <i class="fas fa-building text-orange-600 mt-1"></i>
-                                <span class="text-gray-700">Our affiliated companies (including PT. IRCOMM NORTON
-                                    CAPITAL)</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <i class="fas fa-handshake text-orange-600 mt-1"></i>
-                                <span class="text-gray-700">Authorized partners such as music rights organizations
-                                    (e.g., Prakarsa Antar Musik Publishing Indonesia/PAMPI)</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <i class="fas fa-gavel text-orange-600 mt-1"></i>
-                                <span class="text-gray-700">Legal authorities when required by law</span>
+                        <p>We use the information we collect for various purposes, including:</p>
+                        <ul>
+                            <li><strong>Service Provision:</strong> To provide, maintain, and improve our music
+                                publishing and licensing services</li>
+                            <li><strong>Communication:</strong> To send you updates, newsletters, and marketing
+                                communications</li>
+                            <li><strong>Royalty Management:</strong> To track, calculate, and distribute royalty
+                                payments</li>
+                            <li><strong>Legal Compliance:</strong> To comply with legal obligations and protect our
+                                rights</li>
+                            <li><strong>Analytics:</strong> To understand how our services are used and improve user
+                                experience</li>
+                            <li><strong>Customer Support:</strong> To respond to your inquiries and provide assistance
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Data Security -->
-                    <div class="border-l-4 border-red-600 pl-6" data-aos="fade-right" data-aos-delay="400">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-lock text-red-600 mr-2"></i>5. Data Security
-                        </h3>
-                        <div class="bg-red-50 p-4 rounded-lg">
-                            <p class="text-gray-700">
-                                We implement industry-standard measures to protect your personal information against
-                                unauthorized access, alteration, disclosure, or destruction.
-                            </p>
-                        </div>
-                    </div>
+                    <!-- Data Protection -->
+                    <div id="data-protection" class="policy-section">
+                        <h3>Data Protection and Security</h3>
 
-                    <!-- Your Rights -->
-                    <div class="border-l-4 border-indigo-600 pl-6" data-aos="fade-right" data-aos-delay="500">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-user-check text-indigo-600 mr-2"></i>6. Your Rights
-                        </h3>
-                        <p class="text-gray-700 mb-3">You have the right to:</p>
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <div class="text-center p-4 bg-indigo-50 rounded-lg">
-                                <i class="fas fa-eye text-indigo-600 text-2xl mb-2"></i>
-                                <p class="text-sm font-semibold text-indigo-800">Access your personal information</p>
-                            </div>
-                            <div class="text-center p-4 bg-indigo-50 rounded-lg">
-                                <i class="fas fa-edit text-indigo-600 text-2xl mb-2"></i>
-                                <p class="text-sm font-semibold text-indigo-800">Update or delete your data</p>
-                            </div>
-                            <div class="text-center p-4 bg-indigo-50 rounded-lg">
-                                <i class="fas fa-times-circle text-indigo-600 text-2xl mb-2"></i>
-                                <p class="text-sm font-semibold text-indigo-800">Withdraw consent for processing</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Changes to Privacy Policy -->
-                    <div class="border-l-4 border-yellow-600 pl-6" data-aos="fade-right" data-aos-delay="600">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-sync-alt text-yellow-600 mr-2"></i>7. Changes to This Privacy Policy
-                        </h3>
-                        <p class="text-gray-700">
-                            We may update this Privacy Policy from time to time. The latest version will always be
-                            available on our website.
+                        <p>
+                            We implement appropriate technical and organizational measures to protect your personal
+                            information against unauthorized access, alteration, disclosure, or destruction. These
+                            measures include:
                         </p>
-                    </div>
-                </div>
-            </div>
+                        <ul>
+                            <li>Encryption of sensitive data during transmission</li>
+                            <li>Secure server infrastructure</li>
+                            <li>Regular security assessments</li>
+                            <li>Access controls and authentication procedures</li>
+                            <li>Employee training on data protection</li>
+                        </ul>
 
-            <!-- Terms of Service Section -->
-            <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-delay="200">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">
-                        <i class="fas fa-file-contract text-blue-600 mr-3"></i>Terms of Service
-                    </h2>
-                    <p class="text-gray-600">Last Updated: 14 August 2025</p>
-                </div>
-
-                <div class="space-y-8">
-                    <!-- Agreement to Terms -->
-                    <div class="border-l-4 border-purple-600 pl-6" data-aos="fade-right">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-handshake text-purple-600 mr-2"></i>1. Agreement to Terms
-                        </h3>
-                        <p class="text-gray-700">
-                            By accessing or using the JQ Composey website ("Site") and our services, you agree to these
-                            Terms of Service. If you do not agree, please discontinue use.
+                        <p>
+                            However, no method of transmission over the Internet or electronic storage is 100% secure.
+                            While we strive to protect your personal information, we cannot guarantee absolute security.
                         </p>
                     </div>
 
-                    <!-- Services Provided -->
-                    <div class="border-l-4 border-blue-600 pl-6" data-aos="fade-right" data-aos-delay="100">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-music text-blue-600 mr-2"></i>2. Services Provided
-                        </h3>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                            <div class="bg-blue-50 p-4 rounded-lg text-center">
-                                <i class="fas fa-compact-disc text-blue-600 text-2xl mb-2"></i>
-                                <p class="text-sm font-semibold text-blue-800">Music Publishing</p>
-                            </div>
-                            <div class="bg-blue-50 p-4 rounded-lg text-center">
-                                <i class="fas fa-copyright text-blue-600 text-2xl mb-2"></i>
-                                <p class="text-sm font-semibold text-blue-800">Copyright Administration</p>
-                            </div>
-                            <div class="bg-blue-50 p-4 rounded-lg text-center">
-                                <i class="fas fa-key text-blue-600 text-2xl mb-2"></i>
-                                <p class="text-sm font-semibold text-blue-800">Licensing Solutions</p>
-                            </div>
-                            <div class="bg-blue-50 p-4 rounded-lg text-center">
-                                <i class="fas fa-coins text-blue-600 text-2xl mb-2"></i>
-                                <p class="text-sm font-semibold text-blue-800">Royalty Collection</p>
-                            </div>
-                            <div class="bg-blue-50 p-4 rounded-lg text-center">
-                                <i class="fas fa-lightbulb text-blue-600 text-2xl mb-2"></i>
-                                <p class="text-sm font-semibold text-blue-800">Creative Project Support</p>
-                            </div>
-                        </div>
+                    <!-- Cookies -->
+                    <div id="cookies" class="policy-section">
+                        <h3>Cookies and Tracking Technologies</h3>
+
+                        <p>
+                            We use cookies and similar tracking technologies to track activity on our website and
+                            store certain information. Cookies are files with a small amount of data that are sent
+                            to your browser from a website and stored on your device.
+                        </p>
+
+                        <h4>Types of Cookies We Use:</h4>
+                        <ul>
+                            <li><strong>Essential Cookies:</strong> Necessary for the website to function properly</li>
+                            <li><strong>Analytics Cookies:</strong> Help us understand how visitors interact with our
+                                website</li>
+                            <li><strong>Marketing Cookies:</strong> Used to deliver relevant advertisements</li>
+                        </ul>
+
+                        <p>
+                            You can instruct your browser to refuse all cookies or to indicate when a cookie is being
+                            sent.
+                            However, if you do not accept cookies, you may not be able to use some portions of our
+                            website.
+                        </p>
                     </div>
 
-                    <!-- User Responsibilities -->
-                    <div class="border-l-4 border-green-600 pl-6" data-aos="fade-right" data-aos-delay="200">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-user-cog text-green-600 mr-2"></i>3. User Responsibilities
-                        </h3>
-                        <div class="space-y-3">
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-balance-scale text-green-600 mt-1"></i>
-                                <p class="text-gray-700">You agree to use our services in compliance with applicable
-                                    laws</p>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-shield-alt text-green-600 mt-1"></i>
-                                <p class="text-gray-700">You must not infringe upon any intellectual property rights of
-                                    others</p>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-check-double text-green-600 mt-1"></i>
-                                <p class="text-gray-700">You are responsible for providing accurate and truthful
-                                    information when using our services</p>
-                            </div>
-                        </div>
+                    <!-- Terms of Service -->
+                    <div id="terms-of-service" class="policy-section">
+                        <h2 class="h1 fw-bold mb-4 mt-5">Terms of Service</h2>
+                        <p class="text-muted mb-4"><strong>Last Updated:</strong> January 1, 2024</p>
+
+                        <p>
+                            These Terms of Service ("Terms") govern your access to and use of JQ COMPOSEY's website
+                            and services. By accessing or using our services, you agree to be bound by these Terms.
+                        </p>
+                    </div>
+
+                    <!-- User Obligations -->
+                    <div id="user-obligations" class="policy-section">
+                        <h3>User Obligations</h3>
+
+                        <p>When using our services, you agree to:</p>
+                        <ul>
+                            <li>Provide accurate and complete information</li>
+                            <li>Maintain the security of your account credentials</li>
+                            <li>Comply with all applicable laws and regulations</li>
+                            <li>Respect intellectual property rights</li>
+                            <li>Not engage in any fraudulent or illegal activities</li>
+                            <li>Not interfere with or disrupt our services</li>
+                        </ul>
                     </div>
 
                     <!-- Intellectual Property -->
-                    <div class="border-l-4 border-orange-600 pl-6" data-aos="fade-right" data-aos-delay="300">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-trademark text-orange-600 mr-2"></i>4. Intellectual Property
-                        </h3>
-                        <div class="bg-orange-50 p-4 rounded-lg">
-                            <p class="text-gray-700">
-                                All content on this website, including text, graphics, logos, and audio materials, is
-                                owned by JQ Composey or licensed to us. Unauthorized use, reproduction, or distribution
-                                is prohibited.
-                            </p>
-                        </div>
-                    </div>
+                    <div id="intellectual-property" class="policy-section">
+                        <h3>Intellectual Property Rights</h3>
 
-                    <!-- Licensing Terms -->
-                    <div class="border-l-4 border-red-600 pl-6" data-aos="fade-right" data-aos-delay="400">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-file-signature text-red-600 mr-2"></i>5. Licensing Terms
-                        </h3>
-                        <p class="text-gray-700">
-                            Licenses issued through JQ Composey are subject to specific terms stated in each agreement.
-                            You must comply with all conditions of the license, including payment terms and usage
-                            restrictions.
+                        <p>
+                            All content on this website, including text, graphics, logos, images, and software,
+                            is the property of JQ COMPOSEY or its content suppliers and is protected by international
+                            copyright and intellectual property laws.
+                        </p>
+
+                        <h4>Music Rights</h4>
+                        <p>
+                            When you submit music to JQ COMPOSEY for publishing or licensing, you grant us the rights
+                            necessary to administer, license, and collect royalties on your behalf, as specified in
+                            your agreement with us.
                         </p>
                     </div>
 
                     <!-- Limitation of Liability -->
-                    <div class="border-l-4 border-indigo-600 pl-6" data-aos="fade-right" data-aos-delay="500">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-exclamation-triangle text-indigo-600 mr-2"></i>6. Limitation of Liability
-                        </h3>
-                        <div class="bg-indigo-50 p-4 rounded-lg">
-                            <p class="text-gray-700">
-                                We are not liable for any indirect, incidental, or consequential damage arising from
-                                your use of our website or services.
+                    <div id="limitation-liability" class="policy-section">
+                        <h3>Limitation of Liability</h3>
+
+                        <p>
+                            To the fullest extent permitted by law, JQ COMPOSEY shall not be liable for any indirect,
+                            incidental, special, consequential, or punitive damages, or any loss of profits or revenues,
+                            whether incurred directly or indirectly, or any loss of data, use, goodwill, or other
+                            intangible losses resulting from:
+                        </p>
+                        <ul>
+                            <li>Your use or inability to use our services</li>
+                            <li>Any unauthorized access to or use of our servers</li>
+                            <li>Any interruption or cessation of transmission to or from our services</li>
+                            <li>Any bugs, viruses, or similar harmful components</li>
+                        </ul>
+                    </div>
+
+                    <!-- Changes to Policy -->
+                    <div class="policy-section">
+                        <h3>Changes to This Policy</h3>
+
+                        <p>
+                            We may update our Privacy Policy and Terms of Service from time to time. We will notify
+                            you of any changes by posting the new policy on this page and updating the "Last Updated"
+                            date.
+                        </p>
+
+                        <p>
+                            You are advised to review this page periodically for any changes. Changes are effective
+                            when they are posted on this page.
+                        </p>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div id="contact-info" class="policy-section">
+                        <h3>Contact Us</h3>
+
+                        <p>
+                            If you have any questions about this Privacy Policy or Terms of Service, please contact us:
+                        </p>
+
+                        <div class="card border-0 bg-light p-4">
+                            <p class="mb-2"><strong>PT. Melodex Sonavia International</strong></p>
+                            <p class="mb-2">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                                Wisma Keiai, 14th Floor, Unit-1410<br>
+                                <span class="ms-4">Jl. Jenderal Sudirman No.KAV.3</span><br>
+                                <span class="ms-4">Jakarta Pusat 10220, Indonesia</span>
+                            </p>
+                            <p class="mb-2">
+                                <i class="fas fa-envelope text-primary me-2"></i>
+                                <a href="mailto:melodex.publishing@gmail.com">melodex.publishing@gmail.com</a>
+                            </p>
+                            <p class="mb-0">
+                                <i class="fas fa-phone text-primary me-2"></i>
+                                <a href="tel:+628111000380">+62 811-1000-3806</a>
                             </p>
                         </div>
-                    </div>
-
-                    <!-- Third-Party Links -->
-                    <div class="border-l-4 border-yellow-600 pl-6" data-aos="fade-right" data-aos-delay="600">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-external-link-alt text-yellow-600 mr-2"></i>7. Third-Party Links
-                        </h3>
-                        <p class="text-gray-700">
-                            Our website may contain links to third-party sites. We are not responsible for the content
-                            or privacy practices of these sites.
-                        </p>
-                    </div>
-
-                    <!-- Termination -->
-                    <div class="border-l-4 border-pink-600 pl-6" data-aos="fade-right" data-aos-delay="700">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-ban text-pink-600 mr-2"></i>8. Termination
-                        </h3>
-                        <p class="text-gray-700">
-                            We reserve the right to suspend or terminate your access if you violate these Terms of
-                            Service.
-                        </p>
-                    </div>
-
-                    <!-- Changes to Terms -->
-                    <div class="border-l-4 border-teal-600 pl-6" data-aos="fade-right" data-aos-delay="800">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">
-                            <i class="fas fa-sync-alt text-teal-600 mr-2"></i>9. Changes to Terms
-                        </h3>
-                        <p class="text-gray-700">
-                            We may update these Terms at any time. Continued use of our services after changes are
-                            posted constitutes acceptance of the new terms.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Information -->
-            <div class="bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg p-8 mt-12 text-center"
-                data-aos="fade-up" data-aos-delay="300">
-                <h3 class="text-2xl font-bold mb-4">
-                    <i class="fas fa-envelope text-white mr-3"></i>Contact Us
-                </h3>
-                <p class="mb-6">For questions regarding these Privacy Policy & Terms of Service, contact us at:</p>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="text-left">
-                        <h4 class="font-semibold mb-2">
-                            <i class="fas fa-envelope mr-2"></i>Email:
-                        </h4>
-                        <p class="mb-4">jq.composey@gmail.com</p>
-                    </div>
-                    <div class="text-left">
-                        <h4 class="font-semibold mb-2">
-                            <i class="fas fa-map-marker-alt mr-2"></i>Address:
-                        </h4>
-                        <p>PT. JQCOMM NORTON COMPOSEY<br>
-                            18 PARC PLACE, SCBD<br>
-                            Tower B, 2nd Floor, Unit - 18<br>
-                            Sudirman Central Business District (SCBD)<br>
-                            Jl. Jendral Sudirman Kav. 52 - 53<br>
-                            Jakarta Selatan 12190, Indonesia</p>
                     </div>
                 </div>
             </div>
@@ -416,75 +365,63 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="row">
-                <div class="col-lg-4 mb-6 mb-lg-0">
-                    <img src="images/logo.png" alt="JQ COMPOSEY Logo" class="h-12 mb-4">
-                    <p class="mb-4">JQ COMPOSEY is a music publishing company focused on copyright management, music
-                        licensing, and creative project development for songwriters, musicians, and industry clients.
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="images/logo.png" alt="JQ COMPOSEY" class="footer-logo mb-3">
+                    <p class="mb-4">
+                        Professional music publishing company focused on copyright management,
+                        licensing, and creative development.
                     </p>
-                    <p>© 2023 JQ COMPOSEY. All rights reserved.</p>
+                    <p class="small">&copy; 2024 JQ COMPOSEY. All rights reserved.</p>
                 </div>
 
-                <div class="col-md-4 col-lg-2 mb-6 mb-md-0">
-                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                <div class="col-md-4 col-lg-2">
+                    <h4>Quick Links</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html"
-                                class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li class="mb-2"><a href="about.html"
-                                class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                        <li class="mb-2"><a href="music-creators.html"
-                                class="text-gray-400 hover:text-white transition-colors">For Music Creators</a></li>
-                        <li class="mb-2"><a href="rights-users.html"
-                                class="text-gray-400 hover:text-white transition-colors">For Rights Users</a></li>
-                        <li class="mb-2"><a href="catalog.html"
-                                class="text-gray-400 hover:text-white transition-colors">Catalogue</a></li>
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="music-creators.html">Music Creators</a></li>
+                        <li class="mb-2"><a href="rights-users.html">Rights Users</a></li>
+                        <li class="mb-2"><a href="catalog.html">Catalogue</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-4 col-lg-2 mb-6 mb-md-0">
-                    <h4 class="text-xl font-bold mb-4">Resources</h4>
+                <div class="col-md-4 col-lg-2">
+                    <h4>Resources</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQ</a>
-                        </li>
-                        <li class="mb-2"><a href="privacy-terms.html"
-                                class="text-gray-400 hover:text-white transition-colors">Privacy
-                                Policy</a></li>
-                        <li class="mb-2"><a href="privacy-terms.html"
-                                class="text-gray-400 hover:text-white transition-colors">Terms of
-                                Service</a></li>
-                        <li class="mb-2"><a href="news.html"
-                                class="text-gray-400 hover:text-white transition-colors">News</a></li>
-                        <li class="mb-2"><a href="partners.html"
-                                class="text-gray-400 hover:text-white transition-colors">Our Partners</a></li>
+                        <li class="mb-2"><a href="partners.html">Partners</a></li>
+                        <li class="mb-2"><a href="news.html">News</a></li>
+                        <li class="mb-2"><a href="privacy-terms.html">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="privacy-terms.html">Terms of Service</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 col-lg-4">
-                    <h4 class="text-xl font-bold mb-4">Newsletter</h4>
-                    <p class="mb-4">Subscribe to our newsletter for the latest updates and news.</p>
+                    <h4>Newsletter</h4>
+                    <p class="mb-3">Subscribe for latest updates and news</p>
                     <form class="mb-4">
                         <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Your email address">
+                            <input type="email" class="form-control" placeholder="Your email">
                             <button class="btn btn-primary" type="submit">Subscribe</button>
                         </div>
                     </form>
-                    <div class="flex gap-3">
-                        <a href="https://www.facebook.com/share/16LSMXrrhz/" target="_blank"
-                            class="text-gray-400 hover:text-white transition-colors">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/16LSMXrrhz/" target="_blank" class="social-link">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://www.instagram.com/jq.composey?igsh=MjZ4bG9nZmlpMmk1" target="_blank"
-                            class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.instagram.com/melodex.official?igsh=MXhjcXJvNG54MDd4Mg==" target="_blank"
+                            class="social-link">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.youtube.com/@jq.composey" target="_blank"
-                            class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://youtube.com/@melodexpublishing?si=6AIVpKCLFcpB0VmK" target="_blank"
+                            class="social-link">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://tiktok.com/@jq.composey" target="_blank"
-                            class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.tiktok.com/@melodex.official?_r=1&_t=ZS-93R1Gsxxain" target="_blank"
+                            class="social-link">
                             <i class="fab fa-tiktok"></i>
                         </a>
                     </div>
@@ -493,42 +430,84 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop"
-        class="fixed bottom-6 right-6 bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
+    <!-- Back to Top -->
+    <button id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Bootstrap JS Bundle with Popper -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom JS -->
     <script src="js/main.js"></script>
 
     <script>
-        // Initialize AOS
         AOS.init({
-            once: true
+            duration: 800,
+            once: true,
+            offset: 100
         });
 
-        // Back to Top Button
-        const backToTopButton = document.getElementById('backToTop');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('opacity-0', 'invisible');
-                backToTopButton.classList.add('opacity-100', 'visible');
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
             } else {
-                backToTopButton.classList.remove('opacity-100', 'visible');
-                backToTopButton.classList.add('opacity-0', 'invisible');
+                header.classList.remove('scrolled');
             }
         });
 
-        backToTopButton.addEventListener('click', () => {
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', function () {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
+            });
+        });
+
+        // Smooth scroll for sidebar navigation
+        document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+
+                    // Update active state
+                    document.querySelectorAll('.sidebar-nav a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // Update active nav on scroll
+        window.addEventListener('scroll', function () {
+            let current = '';
+            document.querySelectorAll('.policy-section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.sidebar-nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
             });
         });
     </script>
