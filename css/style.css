@@ -5,10 +5,13 @@
 
 /* Custom Variables */
 :root {
-  --primary-color: #6d28d9; /* Purple 700 */
-  --primary-dark: #5b21b6; /* Purple 800 */
+  --primary-color: #8b5cf6; /* Purple 500 - main purple from logo */
+  --primary-dark: #7c3aed; /* Purple 600 */
   --primary-light: #a78bfa; /* Purple 400 */
-  --secondary-color: #4f46e5; /* Indigo 600 */
+  --secondary-color: #06b6d4; /* Cyan 500 - turquoise from logo */
+  --secondary-light: #22d3ee; /* Cyan 400 */
+  --secondary-dark: #0891b2; /* Cyan 600 */
+  --accent-color: #ec4899; /* Pink 500 - gradient accent */
   --text-dark: #1f2937; /* Gray 800 */
   --text-light: #6b7280; /* Gray 500 */
   --white: #ffffff;
@@ -379,7 +382,7 @@ header {
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, #ff6b6b, #ffa502, #70a1ff);
+  background: linear-gradient(90deg, #06b6d4, #8b5cf6, #ec4899);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
