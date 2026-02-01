@@ -264,40 +264,139 @@ header.scrolled {
 /* ============================================
    Hero Section
    ============================================ */
+/* ============================================
+   Hero Section - Modern Split Layout
+   ============================================ */
 .hero-section {
   position: relative;
-  min-height: 90vh;
+  min-height: 90vh; /* Sedikit lebih pendek agar konten bawah terlihat */
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  background: radial-gradient(circle at 10% 20%, rgb(15, 23, 42) 0%, rgb(18, 18, 28) 90%);
+  padding-top: 80px; /* Space for navbar */
+}
+
+/* Background Abstract Shapes */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  z-index: 0;
 }
 
 .carousel {
   width: 100%;
-  height: 90vh;
 }
 
+/* Item Wrapper */
 .carousel-item {
-  height: 90vh;
+  min-height: 600px;
+  padding: 40px 0;
+}
+
+.hero-content {
   position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.hero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+/* Typography override for split layout */
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
 }
 
-.hero-background img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.5);
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--neutral-400); /* Lighter gray for better read on dark */
+  margin-bottom: 32px;
+  max-width: 540px;
+  line-height: 1.6;
 }
+
+/* Right Side Image Styling */
+.hero-image-wrapper {
+  position: relative;
+  z-index: 5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-card {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+  transition: transform 0.5s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-image-card:hover {
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.02);
+}
+
+.hero-image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive fixes */
+@media (max-width: 991.98px) {
+  .hero-section {
+    min-height: auto;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-cta {
+    justify-content: center;
+  }
+  
+  .hero-image-wrapper {
+    margin-top: 40px;
+  }
+  
+  .hero-image-card {
+    transform: none; /* No 3D effect on mobile for simplicity */
+    max-width: 100%;
+  }
+}
+
 
 .hero-content {
   position: relative;

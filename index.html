@@ -61,66 +61,114 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-            <!-- Carousel Indicators - Modern Style -->
+    <!-- Hero Section - NEW SPLIT LAYOUT -->
+    <section id="hero" class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
             </div>
 
             <div class="carousel-inner">
-
-                <!-- Slide 2 -->
+                <!-- Slide 1: Music Publishing -->
                 <div class="carousel-item active">
-                    <div class="hero-background">
-                        <img src="images/recording-studio.jpg" alt="Rights Management">
-                    </div>
-                    <div class="container hero-content">
-                        <div class="row align-items-center">
-                            <div class="col-lg-8 col-xl-7">
-                                <h1 class="hero-title" data-aos="fade-up">
-                                    Rights Management <span class="hero-highlight hero-highlight-blue">Solutions</span>
-                                </h1>
-                                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
-                                    Comprehensive copyright protection and royalty collection services
-                                </p>
-                                <div class="hero-cta" data-aos="fade-up" data-aos-delay="200">
-                                    <a href="rights-users.html" class="btn btn-primary btn-lg">
-                                        <i class="fas fa-shield-alt me-2"></i>Rights Info
-                                    </a>
-                                    <a href="about.html" class="btn btn-outline-light btn-lg">
-                                        <i class="fas fa-info-circle me-2"></i>About Us
-                                    </a>
+                    <div class="container h-100">
+                        <div class="hero-content">
+                            <div class="row align-items-center w-100 g-5">
+                                <div class="col-lg-6 order-2 order-lg-1">
+                                    <h1 class="hero-title" data-aos="fade-up">
+                                        Empowering Your <span class="hero-highlight">Music Legacy</span>
+                                    </h1>
+                                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                                        Managing rights, maximizing royalties, and protecting your creative work in the
+                                        digital age. We ensure your music reaches every corner of the world.
+                                    </p>
+                                    <div class="hero-cta d-flex gap-3" data-aos="fade-up" data-aos-delay="200">
+                                        <a href="music-creators.html" class="btn btn-primary btn-lg px-5">
+                                            Start Journey
+                                        </a>
+                                        <a href="#about" class="btn btn-outline-light btn-lg px-4">
+                                            Learn More
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="200">
+                                    <div class="hero-image-wrapper">
+                                        <div class="hero-image-card">
+                                            <img src="images/hero-publishing-3d.png" alt="Music Publishing Technology">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Slide 3 -->
+                <!-- Slide 2: Rights Management -->
                 <div class="carousel-item">
-                    <div class="hero-background">
-                        <img src="images/mixer-background.jpg" alt="Creative Agency">
+                    <div class="container h-100">
+                        <div class="hero-content">
+                            <div class="row align-items-center w-100 g-5">
+                                <div class="col-lg-6 order-2 order-lg-1">
+                                    <h1 class="hero-title" data-aos="fade-up">
+                                        Rights Management <span
+                                            class="hero-highlight hero-highlight-blue">Solutions</span>
+                                    </h1>
+                                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                                        Comprehensive copyright protection and royalty collection services. Advanced
+                                        technology to track every stream and usage of your catalog.
+                                    </p>
+                                    <div class="hero-cta d-flex gap-3" data-aos="fade-up" data-aos-delay="200">
+                                        <a href="rights-users.html" class="btn btn-primary btn-lg px-5">
+                                            Services
+                                        </a>
+                                        <a href="catalog.html" class="btn btn-outline-light btn-lg px-4">
+                                            Catalog
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="200">
+                                    <div class="hero-image-wrapper">
+                                        <div class="hero-image-card">
+                                            <img src="images/hero-rights-tech.png" alt="Digital Rights Security">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="container hero-content">
-                        <div class="row align-items-center">
-                            <div class="col-lg-8 col-xl-7">
-                                <h1 class="hero-title" data-aos="fade-up">
-                                    Creative <span class="hero-highlight hero-highlight-pink">Collaboration</span>
-                                </h1>
-                                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
-                                    Connecting artists, producers, and platforms worldwide
-                                </p>
-                                <div class="hero-cta" data-aos="fade-up" data-aos-delay="200">
-                                    <a href="music-creators.html" class="btn btn-primary btn-lg">
-                                        <i class="fas fa-users me-2"></i>Join Us
-                                    </a>
-                                    <a href="catalog.html" class="btn btn-outline-light btn-lg">
-                                        <i class="fas fa-music me-2"></i>View Catalogue
-                                    </a>
+                </div>
+
+                <!-- Slide 3: Creative Collaboration -->
+                <div class="carousel-item">
+                    <div class="container h-100">
+                        <div class="hero-content">
+                            <div class="row align-items-center w-100 g-5">
+                                <div class="col-lg-6 order-2 order-lg-1">
+                                    <h1 class="hero-title" data-aos="fade-up">
+                                        Creative <span class="hero-highlight hero-highlight-pink">Collaboration</span>
+                                    </h1>
+                                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                                        Connecting artists, producers, and platforms worldwide. Join a network of
+                                        professionals dedicated to elevating music production.
+                                    </p>
+                                    <div class="hero-cta d-flex gap-3" data-aos="fade-up" data-aos-delay="200">
+                                        <a href="partners.html" class="btn btn-primary btn-lg px-5">
+                                            Partners
+                                        </a>
+                                        <a href="contact.html" class="btn btn-outline-light btn-lg px-4">
+                                            Contact Us
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="200">
+                                    <div class="hero-image-wrapper">
+                                        <div class="hero-image-card">
+                                            <img src="images/hero-collaboration-studio.png"
+                                                alt="Creative Studio Collaboration">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
