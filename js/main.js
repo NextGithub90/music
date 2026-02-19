@@ -1,458 +1,299 @@
-// Main JavaScript for JQ COMPOSEY Website
+/* ============================================
+   MELODEX - Main JavaScript
+   ============================================ */
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Panggil semua fungsi inisialisasi
-  initNavbar();
-  initAnimations();
-  initScrollEffects();
-  initContactForm();
-  initParallax(); // <-- Bug fix: Fungsi ini sekarang dipanggil
-  initCounters(); // <-- Bug fix: Fungsi ini sekarang dipanggil
-  initTestimonialSlider(); // <-- Bug fix: Fungsi ini sekarang dipanggil
-  initArtistCarousel();
-  initHeroCarousel();
-  initShowMoreArtists(); // <-- New: Show More Artists functionality
-});
+document.addEventListener('DOMContentLoaded', function () {
 
-/**
- * Mengelola semua fungsionalitas navbar, termasuk scroll effect dan dropdown.
- */
-function initNavbar() {
-  const navbar = document.querySelector(".navbar");
-  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-  const currentLocation = window.location.pathname;
-
-  // Efek scroll untuk mengubah tampilan navbar
-  if (navbar) {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add("navbar-scrolled", "shadow-sm");
-      } else {
-        navbar.classList.remove("navbar-scrolled", "shadow-sm");
-      }
-    });
-  }
-
-  // Memberi class 'active' pada link navigasi yang sesuai dengan halaman saat ini
-  navLinks.forEach((link) => {
-    // Membersihkan path untuk perbandingan yang lebih akurat
-    const linkPath = new URL(link.href).pathname;
-    if (linkPath === currentLocation || (currentLocation === "/" && link.getAttribute("href") === "index.html")) {
-      link.classList.add("active");
-    }
-  });
-
-  // Logika dropdown yang disederhanakan (mengandalkan Bootstrap atau CSS)
-  document.querySelectorAll(".navbar .dropdown").forEach((dropdown) => {
-    dropdown.addEventListener("click", function (e) {
-      // Hanya toggle dropdown jika yang diklik adalah .dropdown-toggle
-      if (e.target.matches(".dropdown-toggle")) {
-        e.preventDefault();
-        const isOpen = this.classList.contains("show");
-        // Tutup semua dropdown lain
-        document.querySelectorAll(".navbar .dropdown.show").forEach((openDropdown) => {
-          if (openDropdown !== this) {
-            openDropdown.classList.remove("show");
-          }
+    // ============================================
+    // AOS Animation Init
+    // ============================================
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 700,
+            once: true,
+            offset: 80,
+            easing: 'ease-out-cubic'
         });
-        // Toggle dropdown yang diklik
-        this.classList.toggle("show");
-      }
-    });
-  });
-
-  // Menutup dropdown jika klik di luar area navbar
-  window.addEventListener("click", function (e) {
-    if (!e.target.closest(".navbar")) {
-      document.querySelectorAll(".navbar .dropdown.show").forEach((openDropdown) => {
-        openDropdown.classList.remove("show");
-      });
     }
-  });
-}
-/**
- * Mengatur ulang carousel artis agar responsif.
- * - Desktop: Beberapa artis per slide.
- * - Mobile: Satu artis per slide.
- */
-function initArtistCarousel() {
-  const carousel = document.querySelector("#artistsCarousel");
-  if (!carousel) return; // Keluar jika carousel tidak ditemukan
 
-  const carouselInner = carousel.querySelector(".carousel-inner");
-  const carouselIndicators = carousel.querySelector(".carousel-indicators");
-
-  // Simpan konten HTML asli untuk tampilan desktop
-  const originalDesktopContent = {
-    inner: carouselInner.innerHTML,
-    indicators: carouselIndicators.innerHTML,
-  };
-
-  // Simpan semua kartu artis dari struktur asli
-  const allArtistCards = [];
-  carousel.querySelectorAll(".artist-card").forEach((card) => {
-    // Simpan elemen kolomnya (col-lg-4 col-md-6) untuk menjaga struktur
-    allArtistCards.push(card.parentElement);
-  });
-
-  let isMobileView = window.innerWidth < 768;
-
-  function setupMobileView() {
-    // Kosongkan isi carousel yang ada
-    carouselInner.innerHTML = "";
-    carouselIndicators.innerHTML = "";
-
-    allArtistCards.forEach((artistCol, index) => {
-      // 1. Buat <div class="carousel-item"> baru
-      const carouselItem = document.createElement("div");
-      carouselItem.className = "carousel-item";
-      if (index === 0) {
-        carouselItem.classList.add("active");
-      }
-
-      // 2. Buat wrapper untuk menjaga layout
-      const wrapper = document.createElement("div");
-      wrapper.className = "row justify-content-center px-3";
-
-      // 3. Masukkan kolom artis ke dalam wrapper dan carousel-item
-      wrapper.appendChild(artistCol);
-      carouselItem.appendChild(wrapper);
-      carouselInner.appendChild(carouselItem);
-
-      // 4. Buat indikator (titik di bawah) untuk setiap slide
-      const indicator = document.createElement("button");
-      indicator.type = "button";
-      indicator.setAttribute("data-bs-target", "#artistsCarousel");
-      indicator.setAttribute("data-bs-slide-to", index);
-      indicator.setAttribute("aria-label", `Slide ${index + 1}`);
-      if (index === 0) {
-        indicator.className = "active";
-        indicator.setAttribute("aria-current", "true");
-      }
-      carouselIndicators.appendChild(indicator);
-    });
-  }
-
-  function setupDesktopView() {
-    // Kembalikan konten carousel dan indikator ke versi desktop asli
-    carouselInner.innerHTML = originalDesktopContent.inner;
-    carouselIndicators.innerHTML = originalDesktopContent.indicators;
-  }
-
-  // Fungsi utama untuk memeriksa dan mengubah tampilan
-  function updateCarouselView() {
-    const currentlyMobile = window.innerWidth < 768;
-    if (currentlyMobile && !isMobileView) {
-      // Dari desktop ke mobile
-      isMobileView = true;
-      setupMobileView();
-    } else if (!currentlyMobile && isMobileView) {
-      // Dari mobile ke desktop
-      isMobileView = false;
-      setupDesktopView();
-    }
-  }
-
-  // Inisialisasi tampilan saat halaman pertama kali dimuat
-  if (isMobileView) {
-    setupMobileView();
-  }
-
-  // Dengarkan perubahan ukuran jendela
-  window.addEventListener("resize", updateCarouselView);
-}
-/**
- * Menginisialisasi efek hover pada elemen (lebih baik dilakukan dengan CSS).
- * Fungsi ini dipertahankan jika ada logika animasi kompleks di masa depan.
- */
-function initAnimations() {
-  // Catatan: Efek hover pada service-card lebih efisien jika ditangani dengan CSS.
-  // Tambahkan ini di file CSS Anda:
-  /*
-    .service-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .service-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important; // shadow-lg
-    }
-  */
-}
-
-/**
- * Mengelola efek yang terkait dengan scroll, seperti smooth scroll dan memunculkan elemen.
- */
-function initScrollEffects() {
-  // Smooth scroll untuk anchor links
-  document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach((link) => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop - 80, // Offset untuk tinggi navbar
-          behavior: "smooth",
-        });
-      }
-    });
-  });
-
-  // OPTIMASI: Menggunakan IntersectionObserver untuk memunculkan elemen saat di-scroll
-  const revealElements = document.querySelectorAll(".reveal-on-scroll");
-  const revealObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("revealed");
-          observer.unobserve(entry.target); // Berhenti mengamati setelah elemen muncul
-        }
-      });
-    },
-    { threshold: 0.15 }
-  );
-
-  revealElements.forEach((element) => {
-    revealObserver.observe(element);
-  });
-}
-
-/**
- * Mengelola fungsionalitas form kontak.
- */
-function initContactForm() {
-  const contactForm = document.querySelector("#contactForm");
-  if (!contactForm) return;
-
-  contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const formData = new FormData(this);
-    let isValid = true;
-
-    // Validasi sederhana (pastikan semua field terisi)
-    formData.forEach((value, key) => {
-      const input = this.querySelector(`[name="${key}"]`);
-      if (input && input.hasAttribute("required") && value.trim() === "") {
-        isValid = false;
-        input.classList.add("is-invalid");
-      } else if (input) {
-        input.classList.remove("is-invalid");
-      }
-    });
-
-    if (isValid) {
-      console.log("Form valid. Mengirim data:", Object.fromEntries(formData));
-      const successMessage = document.createElement("div");
-      successMessage.className = "alert alert-success mt-3";
-      successMessage.textContent = "Thank you! Your message has been sent.";
-
-      this.reset();
-      this.append(successMessage);
-
-      setTimeout(() => successMessage.remove(), 5000);
-    }
-  });
-}
-
-/**
- * Utility function untuk membatasi frekuensi eksekusi fungsi (misal saat scroll).
- */
-function debounce(func, wait = 10) {
-  let timeout;
-  return function (...args) {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => func.apply(this, args), wait);
-  };
-}
-
-/**
- * Efek parallax yang dioptimalkan dengan debounce.
- */
-function initParallax() {
-  const parallaxElements = document.querySelectorAll(".parallax");
-  if (parallaxElements.length === 0) return;
-
-  const handleScroll = debounce(() => {
-    parallaxElements.forEach((element) => {
-      const speed = parseFloat(element.getAttribute("data-speed") || 0.5);
-      const yPos = -(window.scrollY * speed);
-      element.style.transform = `translateY(${yPos}px)`;
-    });
-  });
-
-  window.addEventListener("scroll", handleScroll);
-}
-
-/**
- * Animasi counter yang hanya berjalan saat elemen terlihat.
- */
-function initCounters() {
-  const counters = document.querySelectorAll(".counter");
-  if (counters.length === 0) return;
-
-  const counterObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const counter = entry.target;
-          const target = +counter.getAttribute("data-target");
-          counter.innerText = "0";
-
-          const updateCount = () => {
-            const count = +counter.innerText.replace(/,/g, "");
-            const increment = target / 200; // Kecepatan animasi
-
-            if (count < target) {
-              counter.innerText = Math.ceil(count + increment).toLocaleString();
-              requestAnimationFrame(updateCount); // Lebih baik untuk animasi
+    // ============================================
+    // Header Scroll
+    // ============================================
+    const header = document.getElementById('header');
+    if (header) {
+        function handleHeaderScroll() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
             } else {
-              counter.innerText = target.toLocaleString();
+                header.classList.remove('scrolled');
             }
-          };
-          requestAnimationFrame(updateCount);
-          observer.unobserve(counter);
         }
-      });
-    },
-    { threshold: 0.8 }
-  );
-
-  counters.forEach((counter) => counterObserver.observe(counter));
-}
-
-/**
- * Slider testimoni yang diperbaiki logikanya.
- */
-function initTestimonialSlider() {
-  const slider = document.querySelector(".testimonial-slider-container"); // Ganti dengan selector container slider Anda
-  if (!slider) return;
-
-  let currentSlide = 0;
-  const slides = slider.querySelectorAll(".testimonial-slide");
-  const dots = slider.querySelectorAll(".testimonial-dot");
-  let autoSlideInterval;
-
-  if (slides.length <= 1) return; // Tidak perlu slider jika hanya ada 1 slide
-
-  function showSlide(index) {
-    slides.forEach((slide) => (slide.style.display = "none"));
-    dots.forEach((dot) => dot.classList.remove("active"));
-    slides[index].style.display = "block";
-    dots[index].classList.add("active");
-  }
-
-  function changeSlide(newIndex) {
-    currentSlide = (newIndex + slides.length) % slides.length;
-    showSlide(currentSlide);
-    resetAutoSlide();
-  }
-
-  function resetAutoSlide() {
-    clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(() => changeSlide(currentSlide + 1), 5000);
-  }
-
-  // Event listeners untuk tombol
-  slider.querySelector(".testimonial-next")?.addEventListener("click", () => changeSlide(currentSlide + 1));
-  slider.querySelector(".testimonial-prev")?.addEventListener("click", () => changeSlide(currentSlide - 1));
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", () => changeSlide(index));
-  });
-
-  // Inisialisasi
-  showSlide(currentSlide);
-  resetAutoSlide();
-}
-
-/**
- * Inisialisasi Hero Carousel dengan auto slider
- */
-function initHeroCarousel() {
-  const heroCarousel = document.querySelector("#heroCarousel");
-
-  if (heroCarousel && typeof bootstrap !== "undefined" && bootstrap.Carousel) {
-    // Inisialisasi carousel dengan konfigurasi auto slider
-    const carousel = new bootstrap.Carousel(heroCarousel, {
-      interval: 6000, // Auto slide setiap 6 detik
-      wrap: true, // Loop kembali ke slide pertama
-      keyboard: true, // Kontrol dengan keyboard
-      pause: "hover", // Pause saat hover
-      ride: "carousel", // Auto start
-    });
-
-    // Event listener untuk transisi yang smooth
-    heroCarousel.addEventListener("slide.bs.carousel", function (e) {
-      // Tambahkan efek fade atau animasi custom jika diperlukan
-      console.log("Hero carousel sliding to:", e.to);
-    });
-
-    console.log("Hero carousel auto slider initialized");
-  }
-}
-
-/**
- * Show More Artists functionality
- */
-function initShowMoreArtists() {
-  const showMoreBtn = document.querySelector("#showMoreArtists");
-  if (!showMoreBtn) return;
-
-  const hiddenArtists = document.querySelectorAll(".artist-hidden");
-  const showMoreText = document.querySelector("#showMoreText");
-  const badge = showMoreBtn.querySelector(".badge");
-  const icon = showMoreBtn.querySelector("i");
-  
-  let isExpanded = false;
-
-  showMoreBtn.addEventListener("click", function () {
-    isExpanded = !isExpanded;
-
-    hiddenArtists.forEach((artist, index) => {
-      if (isExpanded) {
-        // Show with staggered animation
-        setTimeout(() => {
-          artist.classList.remove("artist-hidden");
-          artist.classList.add("artist-visible");
-        }, index * 50);
-      } else {
-        // Hide
-        artist.classList.remove("artist-visible");
-        artist.classList.add("artist-hidden");
-      }
-    });
-
-    // Update button text and icon
-    if (isExpanded) {
-      showMoreText.textContent = "Show Less";
-      icon.classList.remove("fa-chevron-down");
-      icon.classList.add("fa-chevron-up");
-      badge.style.display = "none";
-      
-      // Smooth scroll to show new artists
-      setTimeout(() => {
-        const firstHiddenArtist = hiddenArtists[0];
-        if (firstHiddenArtist) {
-          const offset = firstHiddenArtist.getBoundingClientRect().top + window.scrollY - 100;
-          window.scrollTo({
-            top: offset,
-            behavior: "smooth"
-          });
-        }
-      }, 300);
-    } else {
-      showMoreText.textContent = "Show More Artists";
-      icon.classList.remove("fa-chevron-up");
-      icon.classList.add("fa-chevron-down");
-      badge.style.display = "inline-block";
-      
-      // Scroll back to button
-      setTimeout(() => {
-        showMoreBtn.scrollIntoView({
-          behavior: "smooth",
-          block: "center"
-        });
-      }, 100);
+        window.addEventListener('scroll', handleHeaderScroll);
+        handleHeaderScroll(); // run on load
     }
-  });
-}
+
+    // ============================================
+    // Back to Top
+    // ============================================
+    const backToTop = document.getElementById('backToTop');
+    if (backToTop) {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // ============================================
+    // Show More Artists
+    // ============================================
+    const showMoreBtn = document.getElementById('showMoreArtists');
+    if (showMoreBtn) {
+        let artistsExpanded = false;
+        const hiddenArtists = document.querySelectorAll('.artist-hidden');
+        const showMoreText = document.getElementById('showMoreText');
+        const badge = showMoreBtn.querySelector('.badge');
+
+        showMoreBtn.addEventListener('click', function () {
+            artistsExpanded = !artistsExpanded;
+
+            hiddenArtists.forEach(function (artist) {
+                if (artistsExpanded) {
+                    artist.classList.add('show');
+                } else {
+                    artist.classList.remove('show');
+                }
+            });
+
+            if (showMoreText) {
+                showMoreText.textContent = artistsExpanded ? 'Show Less' : 'Show More Composers';
+            }
+
+            if (badge) {
+                badge.style.display = artistsExpanded ? 'none' : 'inline-block';
+            }
+
+            // Update icon
+            const icon = showMoreBtn.querySelector('i');
+            if (icon) {
+                icon.className = artistsExpanded ? 'fas fa-chevron-up me-2' : 'fas fa-chevron-down me-2';
+            }
+
+            // Re-init AOS for newly visible items
+            if (typeof AOS !== 'undefined') {
+                setTimeout(function () {
+                    AOS.refresh();
+                }, 100);
+            }
+        });
+    }
+
+    // ============================================
+    // Smooth scroll for anchor links
+    // ============================================
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                const headerOffset = 80;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+
+                // Close mobile nav
+                const navCollapse = document.getElementById('navbarNav');
+                if (navCollapse && navCollapse.classList.contains('show')) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+                    if (bsCollapse) bsCollapse.hide();
+                }
+            }
+        });
+    });
+
+    // ============================================
+    // Contact Form Handler
+    // ============================================
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = this.querySelector('[name="name"]');
+            const email = this.querySelector('[name="email"]');
+            const subject = this.querySelector('[name="subject"]');
+            const message = this.querySelector('[name="message"]');
+
+            // Basic validation
+            let isValid = true;
+            [name, email, message].forEach(function (field) {
+                if (field && !field.value.trim()) {
+                    field.classList.add('is-invalid');
+                    isValid = false;
+                } else if (field) {
+                    field.classList.remove('is-invalid');
+                }
+            });
+
+            if (!isValid) return;
+
+            // Build WhatsApp message
+            let whatsappMessage = 'Hello MELODEX!%0A%0A';
+            if (name) whatsappMessage += 'Name: ' + encodeURIComponent(name.value) + '%0A';
+            if (email) whatsappMessage += 'Email: ' + encodeURIComponent(email.value) + '%0A';
+            if (subject) whatsappMessage += 'Subject: ' + encodeURIComponent(subject.value) + '%0A';
+            if (message) whatsappMessage += 'Message: ' + encodeURIComponent(message.value);
+
+            const whatsappUrl = 'https://wa.me/6281110003806?text=' + whatsappMessage;
+            window.open(whatsappUrl, '_blank');
+
+            // Show success
+            const successAlert = document.createElement('div');
+            successAlert.className = 'alert alert-success mt-3';
+            successAlert.innerHTML = '<i class="fas fa-check-circle me-2"></i>Redirecting to WhatsApp...';
+            contactForm.appendChild(successAlert);
+
+            setTimeout(function () {
+                successAlert.remove();
+            }, 3000);
+        });
+    }
+
+    // ============================================
+    // Counter Animation (for stats)
+    // ============================================
+    function animateCounters() {
+        const counters = document.querySelectorAll('.stat-number');
+        if (counters.length === 0) return;
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    if (counter.dataset.animated) return;
+
+                    const text = counter.textContent;
+                    const match = text.match(/(\d+)/);
+                    if (match) {
+                        const target = parseInt(match[1]);
+                        const suffix = text.replace(match[1], '');
+                        let current = 0;
+                        const increment = Math.ceil(target / 50);
+                        const timer = setInterval(function () {
+                            current += increment;
+                            if (current >= target) {
+                                current = target;
+                                clearInterval(timer);
+                            }
+                            counter.innerHTML = current + '<span class="stat-suffix">' + suffix.replace(/<[^>]*>/g, '') + '</span>';
+                        }, 30);
+                    }
+                    counter.dataset.animated = 'true';
+                    observer.unobserve(counter);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(function (counter) {
+            observer.observe(counter);
+        });
+    }
+
+    animateCounters();
+
+    // ============================================
+    // Newsletter Form
+    // ============================================
+    document.querySelectorAll('footer form, .cta-section form').forEach(function (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const emailInput = this.querySelector('input[type="email"]');
+            if (emailInput && emailInput.value.trim()) {
+                const alert = document.createElement('div');
+                alert.className = 'alert alert-success mt-2 py-2 small';
+                alert.textContent = 'Thank you for subscribing!';
+                this.parentNode.appendChild(alert);
+                emailInput.value = '';
+                setTimeout(function () { alert.remove(); }, 3000);
+            }
+        });
+    });
+
+    // ============================================
+    // Active Nav Link
+    // ============================================
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-link').forEach(function (link) {
+        const href = link.getAttribute('href');
+        if (href === currentPage) {
+            link.classList.add('active');
+        } else if (link.classList.contains('active') && href !== currentPage) {
+            // Don't remove active if manually set
+        }
+    });
+
+    // ============================================
+    // Catalog Search/Filter
+    // ============================================
+    const searchInput = document.getElementById('catalogSearch');
+    if (searchInput) {
+        searchInput.addEventListener('input', function () {
+            const query = this.value.toLowerCase().trim();
+            const rows = document.querySelectorAll('#catalogTable tbody tr');
+            let visibleCount = 0;
+
+            rows.forEach(function (row) {
+                const text = row.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    row.style.display = '';
+                    visibleCount++;
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (noResults) {
+                noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+            }
+        });
+    }
+
+    // Genre filter
+    const genreFilter = document.getElementById('genreFilter');
+    if (genreFilter) {
+        genreFilter.addEventListener('change', function () {
+            const genre = this.value.toLowerCase();
+            const rows = document.querySelectorAll('#catalogTable tbody tr');
+
+            rows.forEach(function (row) {
+                if (!genre) {
+                    row.style.display = '';
+                } else {
+                    const rowGenre = row.querySelector('td:nth-child(4)');
+                    if (rowGenre && rowGenre.textContent.toLowerCase().includes(genre)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                }
+            });
+        });
+    }
+
+});

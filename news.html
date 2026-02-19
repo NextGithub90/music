@@ -4,337 +4,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Latest news and updates from JQ COMPOSEY - music publishing industry insights and company announcements.">
-    <title>News & Updates - JQ COMPOSEY</title>
+    <meta name="description" content="Latest news and updates from MELODEX music publishing.">
+    <title>News - MELODEX</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        .news-card {
-            transition: all 0.3s;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .news-card:hover {
-            transform: translateY(-8px);
-        }
-
-        .news-card .card-body {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .news-card .card-body p {
-            flex-grow: 1;
-        }
-
-        .news-image {
-            height: 220px;
-            object-fit: cover;
-            border-radius: 12px 12px 0 0;
-            width: 100%;
-        }
-
-        .news-category {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- Header & Navigation -->
-    <header id="header">
+    <!-- Header -->
+    <header id="header" class="header-dark"
+        style="background: rgba(255,255,255,0.97); backdrop-filter: blur(20px); box-shadow: 0 1px 20px rgba(0,0,0,0.08);">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="JQ COMPOSEY Logo">
+                    <img src="images/logo.png" alt="MELODEX Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="music-creators.html">Music Creators</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="rights-users.html">Rights Users</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="catalog.html">Catalogue</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="partners.html">Partners</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="news.html">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="music-creators.html">Music Creators</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rights-users.html">Rights Users</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalog.html">Catalogue</a></li>
+                        <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="section-sm bg-gradient text-white text-center">
+    <!-- Hero -->
+    <section class="page-hero">
         <div class="container" data-aos="fade-up">
-            <h1 class="display-3 fw-bold mb-3">News & <span style="color: #22d3ee;">Updates</span></h1>
-            <p class="fs-5 mb-0">Stay informed with the latest from JQ COMPOSEY</p>
-        </div>
-    </section>
-
-    <!-- Featured News Section -->
-    <section class="section">
-        <div class="container">
-            <div class="row g-4">
-                <!-- Featured Article -->
-                <div class="col-lg-8" data-aos="fade-right">
-                    <div class="card border-0 shadow-lg news-card">
-                        <img src="images/news-featured.jpg" alt="Featured News" class="news-image"
-                            style="height: 400px;">
-                        <div class="card-body p-4">
-                            <span class="news-category bg-primary text-white">Company News</span>
-                            <h2 class="h3 fw-bold mb-3">JQ COMPOSEY Berkomitmen Lindungi Hak Cipta dan Berkolaborasi
-                                Luas Lewat Platform Digital Global</h2>
-                            <div class="d-flex align-items-center text-muted mb-3">
-                                <i class="fas fa-calendar-alt me-2"></i>
-                                <span class="me-4">January 15, 2025</span>
-                                <i class="fas fa-user me-2"></i>
-                                <span>Liputan6.com</span>
-                            </div>
-                            <p class="text-muted mb-4">
-                                JQ Composey, bagian dari Ircomm Group, mengelola lebih dari 500 karya musik dari seluruh
-                                penjuru negeri. Fokus utama adalah perlindungan hak cipta dan kerja sama dengan berbagai
-                                platform global seperti Meta, TikTok, Google, YouTube, hingga ByteDance. Bersama WAMI
-                                dan PAMPI, kami memastikan karya musik Indonesia tak hanya didengar, namun dihargai
-                                secara profesional dalam industri digital...
-                            </p>
-                            <a href="https://www.liputan6.com/regional/read/6043531/era-digital-ini-upaya-lindungi-hak-cipta-musisi"
-                                target="_blank" class="btn btn-primary">
-                                Read More <i class="fas fa-arrow-right ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sidebar -->
-                <div class="col-lg-4" data-aos="fade-left">
-
-
-                    <!-- Recent Posts -->
-                    <div class="card border-0 shadow-md">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold mb-4">Recent Posts</h5>
-                            <div class="mb-3 pb-3 border-bottom">
-                                <h6 class="mb-2"><a href="#" class="text-decoration-none">Protecting Music Copyright in
-                                        Digital Era</a></h6>
-                                <small class="text-muted"><i class="fas fa-calendar me-2"></i>Jan 15, 2025</small>
-                            </div>
-                            <div class="mb-3 pb-3 border-bottom">
-                                <h6 class="mb-2"><a href="#" class="text-decoration-none">BIG Records Asia & JQ COMPOSEY
-                                        Growth</a></h6>
-                                <small class="text-muted"><i class="fas fa-calendar me-2"></i>Dec 28, 2024</small>
-                            </div>
-                            <div class="mb-0">
-                                <h6 class="mb-2"><a href="#" class="text-decoration-none">Lebaran Special Song
-                                        Release</a></h6>
-                                <small class="text-muted"><i class="fas fa-calendar me-2"></i>Apr 10, 2024</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Latest News Grid -->
-    <section class="section bg-light">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Latest Updates</h2>
-                <p class="section-subtitle">Recent news and announcements</p>
-                <div class="section-divider"></div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card border-0 shadow-md news-card">
-                        <img src="images/news1.jpg" alt="News" class="news-image">
-                        <div class="card-body p-4">
-                            <span class="news-category bg-success text-white">Industry Insights</span>
-                            <h5 class="fw-bold mb-3">Era Digital: Upaya Lindungi Hak Cipta Musisi</h5>
-                            <div class="d-flex align-items-center text-muted mb-3 small">
-                                <i class="fas fa-calendar-alt me-2"></i>
-                                <span>January 15, 2025</span>
-                            </div>
-                            <p class="text-muted mb-3">
-                                Hak cipta musisi menjadi isu sangat penting dalam industri musik digital. JQ Composey
-                                berusaha menjadi jembatan kreativitas musisi dengan dunia...
-                            </p>
-                            <a href="https://www.liputan6.com/regional/read/6043531/era-digital-ini-upaya-lindungi-hak-cipta-musisi"
-                                target="_blank" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card border-0 shadow-md news-card">
-                        <img src="images/news-2.jpg" alt="News" class="news-image">
-                        <div class="card-body p-4">
-                            <span class="news-category bg-info text-white">Artist Spotlight</span>
-                            <h5 class="fw-bold mb-3">BIG Records Asia & JQ COMPOSEY Rilis Lagu Selamat Lebaran</h5>
-                            <div class="d-flex align-items-center text-muted mb-3 small">
-                                <i class="fas fa-calendar-alt me-2"></i>
-                                <span>April 10, 2024</span>
-                            </div>
-                            <p class="text-muted mb-3">
-                                Meriahkan Hari Lebaran 2024 dengan merilis lagu spesial "Selamat Lebaran" yang
-                                dinyanyikan oleh CEVKEVIN dengan vibes indie band...
-                            </p>
-                            <a href="https://www.suara.com/pressrelease/2024/04/10/061000/meriahkan-hari-lebaran-2024-big-records-asia-dan-jq-composey-rilis-lagu-spesial"
-                                target="_blank" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card border-0 shadow-md news-card">
-                        <img src="images/news-3.jpg" alt="News" class="news-image">
-                        <div class="card-body p-4">
-                            <span class="news-category bg-warning text-white">Company News</span>
-                            <h5 class="fw-bold mb-3">Ambisi BIG Records Asia dan JQ COMPOSEY Menaklukkan Industri Musik
-                            </h5>
-                            <div class="d-flex align-items-center text-muted mb-3 small">
-                                <i class="fas fa-calendar-alt me-2"></i>
-                                <span>December 20, 2023</span>
-                            </div>
-                            <p class="text-muted mb-3">
-                                Kedua perusahaan pendatang baru yang berdiri tahun 2020 berani memasuki ranah industri
-                                musik saat pandemi Covid-19 dengan prospek yang sangat bagus...
-                            </p>
-                            <a href="https://swa.co.id/read/285355/ambisi-big-records-asia-dan-jq-composey-menaklukkan-industri-musik"
-                                target="_blank" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card border-0 shadow-md news-card">
-                        <img src="images/news-4.jpg" alt="News" class="news-image">
-                        <div class="card-body p-4">
-                            <span class="news-category bg-primary text-white">Company News</span>
-                            <h5 class="fw-bold mb-3">Berhasil Distribusikan 250+ Lagu Karya Anak Bangsa</h5>
-                            <div class="d-flex align-items-center text-muted mb-3 small">
-                                <i class="fas fa-calendar-alt me-2"></i>
-                                <span>December 15, 2023</span>
-                            </div>
-                            <p class="text-muted mb-3">
-                                BIG Records Asia telah berhasil memproduksi dan mendistribusikan lebih dari 250 judul
-                                lagu ke seluruh digital streaming platform di dunia...
-                            </p>
-                            <a href="https://swa.co.id/read/285355/ambisi-big-records-asia-dan-jq-composey-menaklukkan-industri-musik"
-                                target="_blank" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card border-0 shadow-md news-card">
-                        <img src="images/news-5.jpg" alt="News" class="news-image">
-                        <div class="card-body p-4">
-                            <span class="news-category bg-success text-white">Industry Insights</span>
-                            <h5 class="fw-bold mb-3">Kolaborasi dengan Platform Digital Global</h5>
-                            <div class="d-flex align-items-center text-muted mb-3 small">
-                                <i class="fas fa-calendar-alt me-2"></i>
-                                <span>December 10, 2023</span>
-                            </div>
-                            <p class="text-muted mb-3">
-                                JQ COMPOSEY telah bersinergi dengan mitra strategis seperti YouTube, Smule, Resso,
-                                TikTok, Joox dan platform digital global lainnya...
-                            </p>
-                            <a href="https://swa.co.id/read/285355/ambisi-big-records-asia-dan-jq-composey-menaklukkan-industri-musik"
-                                target="_blank" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card border-0 shadow-md news-card">
-                        <img src="images/news6.webp" alt="News" class="news-image">
-                        <div class="card-body p-4">
-                            <span class="news-category bg-info text-white">Artist Spotlight</span>
-                            <h5 class="fw-bold mb-3">Selamat Lebaran by CEVKEVIN: Vibes Indie Band yang Unik</h5>
-                            <div class="d-flex align-items-center text-muted mb-3 small">
-                                <i class="fas fa-calendar-alt me-2"></i>
-                                <span>April 10, 2024</span>
-                            </div>
-                            <p class="text-muted mb-3">
-                                Berbeda dengan lagu religi pada umumnya, "Selamat Lebaran" disajikan dengan aransemen
-                                yang tidak mainstream dengan vibes indie band...
-                            </p>
-                            <a href="https://www.viva.co.id/foto/1704418-big-records-asia-dan-jq-composey-rilis-lagu-selamat-lebaran-by-cevkevin-tonjolkan-vibes-indie-band"
-                                target="_blank" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pagination -->
-            <nav aria-label="News pagination" class="mt-5" data-aos="fade-up">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#"><i class="fas fa-chevron-left"></i></a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
-                    </li>
-                </ul>
+            <h1>Latest <span class="highlight">News</span></h1>
+            <p>Stay updated with the latest from MELODEX and the music industry</p>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center mt-3">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">News</li>
+                </ol>
             </nav>
         </div>
     </section>
 
-    <!-- Newsletter CTA -->
-    <section class="section bg-gradient text-white text-center">
-        <div class="container" data-aos="zoom-in">
-            <h2 class="display-5 fw-bold mb-4">Stay Updated</h2>
-            <p class="fs-5 mb-5 mx-auto" style="max-width: 700px;">
-                Subscribe to our newsletter for the latest news, insights, and updates
-            </p>
-            <form class="mx-auto" style="max-width: 500px;">
-                <div class="input-group input-group-lg">
-                    <input type="email" class="form-control" placeholder="Enter your email">
-                    <button class="btn btn-light" type="submit">
-                        <i class="fas fa-paper-plane me-2"></i>Subscribe
-                    </button>
+    <!-- Featured Article -->
+    <section class="section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="images/news1.jpg" alt="Featured News"
+                        style="width: 100%; border-radius: var(--radius-xl); box-shadow: var(--shadow-xl);"
+                        onerror="this.style.background='linear-gradient(135deg, var(--primary), var(--accent))'; this.style.height='320px'; this.alt='Featured Article';">
                 </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <span class="section-label" style="padding-left: 0; text-align: left;">Featured</span>
+                    <h2
+                        style="font-family: var(--font-heading); font-weight: 800; font-size: 2rem; margin-bottom: 16px;">
+                        JQ COMPOSEY Rayakan Perjalanan 5 Tahun Rintis Jejak Kuatkan Langkah di Ranah Musik Indonesia
+                    </h2>
+                    <p style="color: var(--dark-400); margin-bottom: 8px; font-size: 0.85rem;">
+                        <i class="fas fa-calendar-alt me-2"></i>May 20, 2025
+                        <span class="ms-3"><i class="fas fa-user me-2"></i>MELODEX Team</span>
+                    </p>
+                    <p style="margin-bottom: 24px; line-height: 1.8;">
+                        Merayakan milestone 5 tahun dalam industri musik Indonesia dengan komitmen melindungi hak cipta
+                        dan mengembangkan ekosistem musik digital.
+                    </p>
+                    <a href="https://www.suara.com/entertainment/2025/05/20/170000/jq-composey-rayakan-perjalanan-5-tahun-rintis-jejak-kuatkan-langkah-di-ranah-musik-indonesia"
+                        target="_blank" class="btn btn-primary">
+                        <i class="fas fa-arrow-right me-2"></i>Read Full Article
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="section bg-light-custom">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Updates</span>
+                <h2 class="section-title">All News</h2>
+                <p class="section-subtitle">Latest updates and articles</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- News 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="news-card-v2">
+                        <div class="news-card-v2-img">
+                            <img src="images/news-2.jpg" alt="News Article">
+                        </div>
+                        <div class="news-card-v2-body">
+                            <span class="news-card-v2-date"><i class="fas fa-calendar-alt me-1"></i> 2025</span>
+                            <h4>Kelola 500 Lagu, JQ COMPOSEY Komitmen Lindungi Hak Cipta</h4>
+                            <p>Menunjukkan komitmen serius dalam melindungi hak cipta musisi...</p>
+                            <a href="https://mediaindonesia.com/hiburan/780259/kelola-500-lagu-jq-composey-komitmen-lindungi-hak-cipta"
+                                target="_blank" class="news-card-v2-link">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="news-card-v2">
+                        <div class="news-card-v2-img">
+                            <img src="images/news-3.jpg" alt="News Article">
+                        </div>
+                        <div class="news-card-v2-body">
+                            <span class="news-card-v2-date"><i class="fas fa-calendar-alt me-1"></i> 2025</span>
+                            <h4>5 Tahun JQ COMPOSEY Merayakan Perjalanan Merintis Jejak Menguatkan Langkah</h4>
+                            <p>Perjalanan 5 tahun JQ COMPOSEY dalam merintis...</p>
+                            <a href="https://norton-news.com/5-tahun-jq-composey-merayakan-perjalanan-merintis-jejak-menguatkan-langkah-di-ranah-musik-tanah-air/"
+                                target="_blank" class="news-card-v2-link">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 4 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="news-card-v2">
+                        <div class="news-card-v2-img">
+                            <img src="images/news-4.jpg" alt="News Article">
+                        </div>
+                        <div class="news-card-v2-body">
+                            <span class="news-card-v2-date"><i class="fas fa-calendar-alt me-1"></i> 2025</span>
+                            <h4>Era Digital Ini Upaya Lindungi Hak Cipta Musisi</h4>
+                            <p>Pembahasan mengenai pentingnya perlindungan hak cipta musisi...</p>
+                            <a href="https://www.liputan6.com/regional/read/6043531/era-digital-ini-upaya-lindungi-hak-cipta-musisi"
+                                target="_blank" class="news-card-v2-link">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 5 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="news-card-v2">
+                        <div class="news-card-v2-img">
+                            <img src="images/news-5.jpg" alt="News Article">
+                        </div>
+                        <div class="news-card-v2-body">
+                            <span class="news-card-v2-date"><i class="fas fa-calendar-alt me-1"></i> June 5, 2025</span>
+                            <h4>Publisher Musik Jadi Pilar Ekosistem Digital dan Lindungi Hak Cipta Lagu</h4>
+                            <p>Peran publisher musik sebagai pilar utama dalam ekosistem digital...</p>
+                            <a href="https://www.tribunnews.com/seleb/2025/06/05/publisher-musik-jadi-pilar-ekosistem-digital-dan-lindungi-hak-cipta-lagu"
+                                target="_blank" class="news-card-v2-link">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 6 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="news-card-v2">
+                        <div class="news-card-v2-img">
+                            <img src="images/news6.webp" alt="News Article">
+                        </div>
+                        <div class="news-card-v2-body">
+                            <span class="news-card-v2-date"><i class="fas fa-calendar-alt me-1"></i> 2025</span>
+                            <h4>JQ COMPOSEY Berkomitmen Lindungi Hak Cipta dan Berkolaborasi Luas</h4>
+                            <p>Komitmen JQ COMPOSEY dalam melindungi hak cipta dan menjalin kolaborasi...</p>
+                            <a href="https://m.jpnn.com/news/jq-composey-berkomitmen-lindungi-hak-cipta-dan-berkolaborasi-luas-lewat-platform-digital-global?page=2"
+                                target="_blank" class="news-card-v2-link">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 7 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="news-card-v2">
+                        <div class="news-card-v2-img">
+                            <img src="images/news-featured.jpg" alt="News Article">
+                        </div>
+                        <div class="news-card-v2-body">
+                            <span class="news-card-v2-date"><i class="fas fa-calendar-alt me-1"></i> 2025</span>
+                            <h4>Komitmen Lindungi Hak Cipta Jalin Kolaborasi Luas Melalui Platform Digital Global</h4>
+                            <p>Strategi JQ COMPOSEY dalam menjalin kolaborasi luas dan melindungi hak cipta...</p>
+                            <a href="https://www.jawapos.com/music-movie/016106077/komitmen-lindungi-hak-cipta-jalin-kolaborasi-luas-melalui-platform-digital-global"
+                                target="_blank" class="news-card-v2-link">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 8 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="news-card-v2">
+                        <div class="news-card-v2-img">
+                            <img src="images/news1.jpg" alt="News Article">
+                        </div>
+                        <div class="news-card-v2-body">
+                            <span class="news-card-v2-date"><i class="fas fa-calendar-alt me-1"></i> 2025</span>
+                            <h4>JQ COMPOSEY Berkomitmen Lindungi Hak Cipta Kolaborasi Luas</h4>
+                            <p>Upaya JQ COMPOSEY dalam membangun kolaborasi global dan melindungi hak cipta...</p>
+                            <a href="https://www.suarakarya.id/wisata/26015289998/jq-composey-berkomitmen-lindungi-hak-cipta-kolaborasi-luas-melalui-platform-digital-global"
+                                target="_blank" class="news-card-v2-link">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 9 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="news-card-v2">
+                        <div class="news-card-v2-img">
+                            <img src="images/news-2.jpg" alt="News Article">
+                        </div>
+                        <div class="news-card-v2-body">
+                            <span class="news-card-v2-date"><i class="fas fa-calendar-alt me-1"></i> 2024</span>
+                            <h4>Big Records Asia dan JQ COMPOSEY Rilis Lagu Selamat Lebaran</h4>
+                            <p>Kolaborasi perilisan lagu spesial Lebaran dengan nuansa indie band...</p>
+                            <a href="https://www.viva.co.id/foto/1704418-big-records-asia-dan-jq-composey-rilis-lagu-selamat-lebaran-by-cevkevin-tonjolkan-vibes-indie-band"
+                                target="_blank" class="news-card-v2-link">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 10 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="news-card-v2">
+                        <div class="news-card-v2-img">
+                            <img src="images/news-3.jpg" alt="News Article">
+                        </div>
+                        <div class="news-card-v2-body">
+                            <span class="news-card-v2-date"><i class="fas fa-calendar-alt me-1"></i> April 10,
+                                2024</span>
+                            <h4>Meriahkan Hari Lebaran 2024, Big Records Asia dan JQ COMPOSEY Rilis Lagu Spesial</h4>
+                            <p>Perayaan Lebaran 2024 yang diramaikan dengan rilisan lagu spesial kolaborasi...</p>
+                            <a href="https://www.suara.com/pressrelease/2024/04/10/061000/meriahkan-hari-lebaran-2024-big-records-asia-dan-jq-composey-rilis-lagu-spesial"
+                                target="_blank" class="news-card-v2-link">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 11 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="news-card-v2">
+                        <div class="news-card-v2-img">
+                            <img src="images/news-4.jpg" alt="News Article">
+                        </div>
+                        <div class="news-card-v2-body">
+                            <span class="news-card-v2-date"><i class="fas fa-calendar-alt me-1"></i> 2024</span>
+                            <h4>Ambisi Big Records Asia dan JQ COMPOSEY Menaklukkan Industri Musik</h4>
+                            <p>Visi dan misi besar Big Records Asia dan JQ COMPOSEY dalam menaklukkan...</p>
+                            <a href="https://swa.co.id/swa/trends/ambisi-big-records-asia-dan-jq-composey-menaklukkan-industri-musik"
+                                target="_blank" class="news-card-v2-link">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 12 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="news-card-v2">
+                        <div class="news-card-v2-img">
+                            <img src="images/news-5.jpg" alt="News Article">
+                        </div>
+                        <div class="news-card-v2-body">
+                            <span class="news-card-v2-date"><i class="fas fa-calendar-alt me-1"></i> 2020</span>
+                            <h4>Big Records Asia dan JQ COMPOSEY Tetap Berkarya di Masa Pandemi COVID-19</h4>
+                            <p>Ketahanan dan adaptasi dalam berkarya di tengah tantangan pandemi COVID-19...</p>
+                            <a href="https://investor.id/lifestyle/229950/big-records-asia-da-jq-composey-tetap-berkarya-di-masa-pandemi-covid19"
+                                target="_blank" class="news-card-v2-link">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 13 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="news-card-v2">
+                        <div class="news-card-v2-img">
+                            <img src="images/news6.webp" alt="News Article">
+                        </div>
+                        <div class="news-card-v2-body">
+                            <span class="news-card-v2-date"><i class="fas fa-calendar-alt me-1"></i> December 3,
+                                2020</span>
+                            <h4>IRCOMM Norton Capital Ekspansi ke Bisnis Streaming Musik Digital Multiplatform</h4>
+                            <p>Langkah ekspansi IRCOMM Norton Capital ke bisnis streaming musik digital...</p>
+                            <a href="https://www.tribunnews.com/techno/2020/12/03/ircomm-norton-capital-ekspansi-ke-bisnis-streaming-musik-digital-multiplatform"
+                                target="_blank" class="news-card-v2-link">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="cta-section text-white text-center">
+        <div class="container" data-aos="zoom-in">
+            <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 20px; color: white;">
+                Stay Updated</h2>
+            <p
+                style="font-size: 1.15rem; margin-bottom: 36px; max-width: 600px; margin-left: auto; margin-right: auto; opacity: 0.9;">
+                Subscribe to our newsletter for the latest news and industry insights
+            </p>
+            <form class="d-flex gap-3 justify-content-center flex-wrap" style="max-width: 500px; margin: 0 auto;">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email"
+                    style="flex: 1; min-width: 250px;">
+                <button class="btn btn-light btn-lg" type="submit">
+                    <i class="fas fa-bell me-2"></i>Subscribe
+                </button>
             </form>
         </div>
     </section>
@@ -344,14 +331,20 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
-                    <img src="images/logo.png" alt="JQ COMPOSEY" class="footer-logo mb-3">
-                    <p class="mb-4">
-                        Professional music publishing company focused on copyright management,
-                        licensing, and creative development.
-                    </p>
-                    <p class="small">&copy; 2024 JQ COMPOSEY. All rights reserved.</p>
+                    <img src="images/logo.png" alt="MELODEX" class="footer-logo">
+                    <p style="margin-bottom: 24px;">Professional music publishing company focused on copyright
+                        management, licensing, and creative development.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/16LSMXrrhz/" target="_blank" class="social-link"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/melodex.official?igsh=MXhjcXJvNG54MDd4Mg==" target="_blank"
+                            class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@melodexpublishing?si=6AIVpKCLFcpB0VmK" target="_blank"
+                            class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@melodex.official?_r=1&_t=ZS-93R1Gsxxain" target="_blank"
+                            class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
                 </div>
-
                 <div class="col-md-4 col-lg-2">
                     <h4>Quick Links</h4>
                     <ul class="list-unstyled">
@@ -362,7 +355,6 @@
                         <li class="mb-2"><a href="catalog.html">Catalogue</a></li>
                     </ul>
                 </div>
-
                 <div class="col-md-4 col-lg-2">
                     <h4>Resources</h4>
                     <ul class="list-unstyled">
@@ -373,80 +365,28 @@
                         <li class="mb-2"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-
                 <div class="col-md-4 col-lg-4">
                     <h4>Newsletter</h4>
-                    <p class="mb-3">Subscribe for latest updates and news</p>
-                    <form class="mb-4">
+                    <p style="margin-bottom: 16px;">Subscribe for latest updates and news</p>
+                    <form style="margin-bottom: 20px;">
                         <div class="input-group">
                             <input type="email" class="form-control" placeholder="Your email">
                             <button class="btn btn-primary" type="submit">Subscribe</button>
                         </div>
                     </form>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/16LSMXrrhz/" target="_blank" class="social-link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/melodex.official?igsh=MXhjcXJvNG54MDd4Mg==" target="_blank"
-                            class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://youtube.com/@melodexpublishing?si=6AIVpKCLFcpB0VmK" target="_blank"
-                            class="social-link">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@melodex.official?_r=1&_t=ZS-93R1Gsxxain" target="_blank"
-                            class="social-link">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                    </div>
                 </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MELODEX - PT. Melodex Sonavia International. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top -->
-    <button id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
-
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
-        });
-
-        const header = document.getElementById('header');
-        window.addEventListener('scroll', function () {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', function () {
-            if (window.scrollY > 300) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
-
-        backToTop.addEventListener('click', function () {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
 </body>
 
 </html>
